@@ -27,5 +27,25 @@ In order to run this app in your simulator, perform the following steps:
 * Kahoot is used for app store
 * Kahoot_Test is used for Development/Testing
 
+## Project Structure
+* Networking : Only Dependancy new-work  in this folder
+* Kahoot Kit : All Reuse-able component in Kahoot kit folder
+* Kahoot : All feature should be in Kahoot folder
+  
+## New Feature
+ If a new feature is added then follow this folder structere
+Ex- Quiz
+ Then folder structure will be quiz is the parent strucure and 
+ 
+* Quiz
+  
+
+
+
+### Reusable Class
+* Shadow Button: Which is responsible for all default shadow button
+
+* Shadow Button: 
+
 ### NB:
 Follow docC for documentation 
