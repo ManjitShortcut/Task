@@ -39,8 +39,8 @@ In order to run this app in your simulator, perform the following steps:
 * Kahoot : All feature should be in Kahoot folder
   
 ## New Feature
- If a new feature is added then follow this folder structere
- Ex- Quiz
+ If a new feature is added then follow this folder structure
+Ex- Quiz
  Then folder structure will be 
  
 * Quiz As parent folder 
@@ -61,3 +61,4 @@ In order to run this app in your simulator, perform the following steps:
 * All public method should be on the top with group by #pargma mark Public method then by private methods group by #pargma mark private method
 
 ##NB: Remember add child coordinator to parent coordinator array and also remove child coordinator when pop/dismissed the view
+
