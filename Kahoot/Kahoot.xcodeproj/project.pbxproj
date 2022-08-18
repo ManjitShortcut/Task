@@ -1,0 +1,1117 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0779B428AC5BBD00CC4BA5 /* QuestionListViewController+CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0779B328AC5BBD00CC4BA5 /* QuestionListViewController+CollectionViewExtension.swift */; };
+		1A37405928A9ADFC00EA87A3 /* QuizTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37405828A9ADFC00EA87A3 /* QuizTypeView.swift */; };
+		1A37405B28A9B1DC00EA87A3 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37405A28A9B1DC00EA87A3 /* Label.swift */; };
+		1A37406128A9B6A600EA87A3 /* QuestionInfoViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406028A9B6A600EA87A3 /* QuestionInfoViewItem.swift */; };
+		1A37406328A9B6C200EA87A3 /* ChoiceViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406228A9B6C200EA87A3 /* ChoiceViewItem.swift */; };
+		1A37406528A9B77600EA87A3 /* CollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406428A9B77600EA87A3 /* CollectionView+Extension.swift */; };
+		1A37406C28AA39AA00EA87A3 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406B28AA39AA00EA87A3 /* Font+Extension.swift */; };
+		1A37406F28AA584300EA87A3 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406E28AA584300EA87A3 /* LayoutConstraint.swift */; };
+		1A37407128AA706200EA87A3 /* QuizCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37407028AA706200EA87A3 /* QuizCountView.swift */; };
+		1A37407328AAFF4300EA87A3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37407228AAFF4300EA87A3 /* UIImage+Extension.swift */; };
+		1A37407528AB076700EA87A3 /* UIViewShadow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37407428AB076700EA87A3 /* UIViewShadow+Extension.swift */; };
+		1A46121A28A9760500193A29 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46121928A9760500193A29 /* BaseViewController.swift */; };
+		1A46122128A97BF400193A29 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46121F28A97BF400193A29 /* XCAssets+Generated.swift */; };
+		1A46122228A97BF400193A29 /* XCColors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46122028A97BF400193A29 /* XCColors+Generated.swift */; };
+		1A501B6B28A7099B009EC0B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501B6A28A7099B009EC0B1 /* AppDelegate.swift */; };
+		1A501B6D28A7099B009EC0B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501B6C28A7099B009EC0B1 /* SceneDelegate.swift */; };
+		1A501B7728A7099C009EC0B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A501B7528A7099C009EC0B1 /* LaunchScreen.storyboard */; };
+		1A501B8228A7099D009EC0B1 /* KahootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501B8128A7099D009EC0B1 /* KahootTests.swift */; };
+		1A501B8C28A7099D009EC0B1 /* KahootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501B8B28A7099D009EC0B1 /* KahootUITests.swift */; };
+		1A501B8E28A7099D009EC0B1 /* KahootUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501B8D28A7099D009EC0B1 /* KahootUITestsLaunchTests.swift */; };
+		1A501BBE28A7198D009EC0B1 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BBD28A7198D009EC0B1 /* ProgressBarView.swift */; };
+		1A501BC028A719EC009EC0B1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BBF28A719EC009EC0B1 /* Button.swift */; };
+		1A501BC328A72F2C009EC0B1 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC228A72F2C009EC0B1 /* AppConfiguration.swift */; };
+		1A501BC528A72F92009EC0B1 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC428A72F92009EC0B1 /* EndPointType.swift */; };
+		1A501BC728A73027009EC0B1 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC628A73027009EC0B1 /* HTTPTask.swift */; };
+		1A501BC928A73035009EC0B1 /* HTPPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC828A73035009EC0B1 /* HTPPHeaders.swift */; };
+		1A8AECE128ABCCCB00987888 /* AnswerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AECE028ABCCCB00987888 /* AnswerResultView.swift */; };
+		1A8AED2328AC059800987888 /* AppMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AED2228AC059800987888 /* AppMargin.swift */; };
+		1A8AED2628AC141100987888 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1A8AED2528AC141100987888 /* Kingfisher */; };
+		1A8AED2828AC23C800987888 /* ChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AED2728AC23C800987888 /* ChoiceViewModel.swift */; };
+		1A8AED3028AC4A8900987888 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A8AED2F28AC491F00987888 /* Montserrat-Regular.ttf */; };
+		1A96F54A28A7A98200C79C17 /* QuizInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F54928A7A98200C79C17 /* QuizInfoCoordinator.swift */; };
+		1A96F54C28A7A99000C79C17 /* QuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F54B28A7A99000C79C17 /* QuestionListViewModel.swift */; };
+		1A96F54E28A7A9AE00C79C17 /* QuestionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F54D28A7A9AE00C79C17 /* QuestionListViewController.swift */; };
+		1A96F55128A7B4D700C79C17 /* DependacyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55028A7B4D700C79C17 /* DependacyContainer.swift */; };
+		1A96F55328A7B5A200C79C17 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55228A7B5A200C79C17 /* Theme.swift */; };
+		1A96F55528A7B62A00C79C17 /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55428A7B62A00C79C17 /* NetWorkService.swift */; };
+		1A96F55A28A831CC00C79C17 /* AppInitializerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55928A831CC00C79C17 /* AppInitializerCoordinator.swift */; };
+		1A96F55C28A8322F00C79C17 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55B28A8322F00C79C17 /* Coordinator.swift */; };
+		1A96F55E28A8530800C79C17 /* AppInitializerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55D28A8530800C79C17 /* AppInitializerViewController.swift */; };
+		1A96F56028A8534C00C79C17 /* AppInitializerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55F28A8534C00C79C17 /* AppInitializerViewModel.swift */; };
+		1A96F56328A85AE900C79C17 /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F56228A85AE900C79C17 /* QuizService.swift */; };
+		1A96F57028A8645300C79C17 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F56F28A8645300C79C17 /* ViewController+Extension.swift */; };
+		1A96F57328A8696600C79C17 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57228A8696600C79C17 /* LoadingView.swift */; };
+		1A96F57628A86F2300C79C17 /* QuizInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57528A86F2300C79C17 /* QuizInfo.swift */; };
+		1A96F57828A86F3900C79C17 /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57728A86F3900C79C17 /* QuizQuestion.swift */; };
+		1A96F57A28A871F300C79C17 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57928A871F300C79C17 /* Choice.swift */; };
+		1A96F57C28A872C100C79C17 /* LanguageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57B28A872C100C79C17 /* LanguageInfo.swift */; };
+		1A96F57E28A9031100C79C17 /* QuizEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57D28A9031100C79C17 /* QuizEndPoint.swift */; };
+		1A96F58028A91FDA00C79C17 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57F28A91FDA00C79C17 /* Parser.swift */; };
+		1A96F58328A9378000C79C17 /* QuizInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F58228A9378000C79C17 /* QuizInfoViewController.swift */; };
+		1A96F58828A93BF500C79C17 /* QuizInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F58728A93BF500C79C17 /* QuizInfoViewModel.swift */; };
+		1A96F58E28A94D8100C79C17 /* NavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F58D28A94D8100C79C17 /* NavigationController+Extension.swift */; };
+		1A96F59528A95F4400C79C17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A96F59028A95F4400C79C17 /* Images.xcassets */; };
+		1A96F59628A95F4400C79C17 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A96F59128A95F4400C79C17 /* AppIcon.xcassets */; };
+		1A96F59828A95F4400C79C17 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A96F59428A95F4400C79C17 /* Colors.xcassets */; };
+		1A9E34C628AD592C009A0154 /* Device+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E34C528AD592C009A0154 /* Device+Extension.swift */; };
+		1A9E34C928AD6AE4009A0154 /* AlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E34C828AD6AE4009A0154 /* AlertProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A501B7E28A7099D009EC0B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A501B5F28A7099B009EC0B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A501B6628A7099B009EC0B1;
+			remoteInfo = Kahoot;
+		};
+		1A501B8828A7099D009EC0B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A501B5F28A7099B009EC0B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A501B6628A7099B009EC0B1;
+			remoteInfo = Kahoot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A0779B328AC5BBD00CC4BA5 /* QuestionListViewController+CollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionListViewController+CollectionViewExtension.swift"; sourceTree = "<group>"; };
+		1A37405828A9ADFC00EA87A3 /* QuizTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTypeView.swift; sourceTree = "<group>"; };
+		1A37405A28A9B1DC00EA87A3 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		1A37406028A9B6A600EA87A3 /* QuestionInfoViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInfoViewItem.swift; sourceTree = "<group>"; };
+		1A37406228A9B6C200EA87A3 /* ChoiceViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewItem.swift; sourceTree = "<group>"; };
+		1A37406428A9B77600EA87A3 /* CollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extension.swift"; sourceTree = "<group>"; };
+		1A37406B28AA39AA00EA87A3 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		1A37406E28AA584300EA87A3 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		1A37407028AA706200EA87A3 /* QuizCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCountView.swift; sourceTree = "<group>"; };
+		1A37407228AAFF4300EA87A3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		1A37407428AB076700EA87A3 /* UIViewShadow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewShadow+Extension.swift"; sourceTree = "<group>"; };
+		1A46121928A9760500193A29 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1A46121F28A97BF400193A29 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		1A46122028A97BF400193A29 /* XCColors+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCColors+Generated.swift"; sourceTree = "<group>"; };
+		1A501B6728A7099B009EC0B1 /* Kahoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kahoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A501B6A28A7099B009EC0B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A501B6C28A7099B009EC0B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A501B7628A7099C009EC0B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A501B7828A7099C009EC0B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A501B7D28A7099D009EC0B1 /* KahootTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KahootTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A501B8128A7099D009EC0B1 /* KahootTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahootTests.swift; sourceTree = "<group>"; };
+		1A501B8728A7099D009EC0B1 /* KahootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KahootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A501B8B28A7099D009EC0B1 /* KahootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahootUITests.swift; sourceTree = "<group>"; };
+		1A501B8D28A7099D009EC0B1 /* KahootUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahootUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A501BBD28A7198D009EC0B1 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		1A501BBF28A719EC009EC0B1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		1A501BC228A72F2C009EC0B1 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		1A501BC428A72F92009EC0B1 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		1A501BC628A73027009EC0B1 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		1A501BC828A73035009EC0B1 /* HTPPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTPPHeaders.swift; sourceTree = "<group>"; };
+		1A8AECE028ABCCCB00987888 /* AnswerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerResultView.swift; sourceTree = "<group>"; };
+		1A8AED2228AC059800987888 /* AppMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMargin.swift; sourceTree = "<group>"; };
+		1A8AED2728AC23C800987888 /* ChoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewModel.swift; sourceTree = "<group>"; };
+		1A8AED2F28AC491F00987888 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		1A96F54928A7A98200C79C17 /* QuizInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfoCoordinator.swift; sourceTree = "<group>"; };
+		1A96F54B28A7A99000C79C17 /* QuestionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewModel.swift; sourceTree = "<group>"; };
+		1A96F54D28A7A9AE00C79C17 /* QuestionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewController.swift; sourceTree = "<group>"; };
+		1A96F55028A7B4D700C79C17 /* DependacyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependacyContainer.swift; sourceTree = "<group>"; };
+		1A96F55228A7B5A200C79C17 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1A96F55428A7B62A00C79C17 /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
+		1A96F55928A831CC00C79C17 /* AppInitializerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializerCoordinator.swift; sourceTree = "<group>"; };
+		1A96F55B28A8322F00C79C17 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1A96F55D28A8530800C79C17 /* AppInitializerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializerViewController.swift; sourceTree = "<group>"; };
+		1A96F55F28A8534C00C79C17 /* AppInitializerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializerViewModel.swift; sourceTree = "<group>"; };
+		1A96F56228A85AE900C79C17 /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
+		1A96F56F28A8645300C79C17 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		1A96F57228A8696600C79C17 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1A96F57528A86F2300C79C17 /* QuizInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfo.swift; sourceTree = "<group>"; };
+		1A96F57728A86F3900C79C17 /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
+		1A96F57928A871F300C79C17 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		1A96F57B28A872C100C79C17 /* LanguageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInfo.swift; sourceTree = "<group>"; };
+		1A96F57D28A9031100C79C17 /* QuizEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEndPoint.swift; sourceTree = "<group>"; };
+		1A96F57F28A91FDA00C79C17 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		1A96F58228A9378000C79C17 /* QuizInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfoViewController.swift; sourceTree = "<group>"; };
+		1A96F58728A93BF500C79C17 /* QuizInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfoViewModel.swift; sourceTree = "<group>"; };
+		1A96F58D28A94D8100C79C17 /* NavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationController+Extension.swift"; sourceTree = "<group>"; };
+		1A96F59028A95F4400C79C17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A96F59128A95F4400C79C17 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		1A96F59428A95F4400C79C17 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1A9E34C528AD592C009A0154 /* Device+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Extension.swift"; sourceTree = "<group>"; };
+		1A9E34C828AD6AE4009A0154 /* AlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A501B6428A7099B009EC0B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8AED2628AC141100987888 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A501B7A28A7099D009EC0B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A501B8428A7099D009EC0B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A37405728A9ADE300EA87A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A8AECE028ABCCCB00987888 /* AnswerResultView.swift */,
+				1A37407028AA706200EA87A3 /* QuizCountView.swift */,
+				1A37405828A9ADFC00EA87A3 /* QuizTypeView.swift */,
+				1A37407428AB076700EA87A3 /* UIViewShadow+Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A37406A28A9C3D800EA87A3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1A37406B28AA39AA00EA87A3 /* Font+Extension.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		1A37406D28AA583400EA87A3 /* Constraint */ = {
+			isa = PBXGroup;
+			children = (
+				1A37406E28AA584300EA87A3 /* LayoutConstraint.swift */,
+			);
+			path = Constraint;
+			sourceTree = "<group>";
+		};
+		1A46120F28A967AA00193A29 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				1A46121F28A97BF400193A29 /* XCAssets+Generated.swift */,
+				1A46122028A97BF400193A29 /* XCColors+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		1A501B5E28A7099B009EC0B1 = {
+			isa = PBXGroup;
+			children = (
+				1A501BAD28A71876009EC0B1 /* KahootNetworking */,
+				1A501BAC28A71861009EC0B1 /* KahootKit */,
+				1A501B6928A7099B009EC0B1 /* Kahoot */,
+				1A501B8028A7099D009EC0B1 /* KahootTests */,
+				1A501B8A28A7099D009EC0B1 /* KahootUITests */,
+				1A501B6828A7099B009EC0B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A501B6828A7099B009EC0B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A501B6728A7099B009EC0B1 /* Kahoot.app */,
+				1A501B7D28A7099D009EC0B1 /* KahootTests.xctest */,
+				1A501B8728A7099D009EC0B1 /* KahootUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A501B6928A7099B009EC0B1 /* Kahoot */ = {
+			isa = PBXGroup;
+			children = (
+				1A501B7828A7099C009EC0B1 /* Info.plist */,
+				1A501B7528A7099C009EC0B1 /* LaunchScreen.storyboard */,
+				1A96F56128A8536600C79C17 /* App */,
+				1A96F54F28A7B35500C79C17 /* AppInitilizer */,
+				1A96F58128A9372D00C79C17 /* QuizInfo */,
+				1A501BD128A73162009EC0B1 /* QuizList */,
+				1A96F58F28A95F4400C79C17 /* Resources */,
+			);
+			path = Kahoot;
+			sourceTree = "<group>";
+		};
+		1A501B8028A7099D009EC0B1 /* KahootTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A501B8128A7099D009EC0B1 /* KahootTests.swift */,
+			);
+			path = KahootTests;
+			sourceTree = "<group>";
+		};
+		1A501B8A28A7099D009EC0B1 /* KahootUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A501B8B28A7099D009EC0B1 /* KahootUITests.swift */,
+				1A501B8D28A7099D009EC0B1 /* KahootUITestsLaunchTests.swift */,
+			);
+			path = KahootUITests;
+			sourceTree = "<group>";
+		};
+		1A501BAC28A71861009EC0B1 /* KahootKit */ = {
+			isa = PBXGroup;
+			children = (
+				1A9E34C428AD58FA009A0154 /* Device */,
+				1A501BB428A7193C009EC0B1 /* UIComponent */,
+				1A501BB828A7193C009EC0B1 /* Theme */,
+			);
+			path = KahootKit;
+			sourceTree = "<group>";
+		};
+		1A501BAD28A71876009EC0B1 /* KahootNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1A501BC428A72F92009EC0B1 /* EndPointType.swift */,
+				1A501BC828A73035009EC0B1 /* HTPPHeaders.swift */,
+				1A501BC628A73027009EC0B1 /* HTTPTask.swift */,
+				1A96F55428A7B62A00C79C17 /* NetWorkService.swift */,
+				1A96F57F28A91FDA00C79C17 /* Parser.swift */,
+			);
+			path = KahootNetworking;
+			sourceTree = "<group>";
+		};
+		1A501BB428A7193C009EC0B1 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				1A9E34C728AD6AD0009A0154 /* Alert */,
+				1A501BB928A7193C009EC0B1 /* CollectionView+Extension */,
+				1A501BB728A7193C009EC0B1 /* Button */,
+				1A37406D28AA583400EA87A3 /* Constraint */,
+				1A37406A28A9C3D800EA87A3 /* Font */,
+				1A501BB528A7193C009EC0B1 /* Lable */,
+				1A96F57128A8694300C79C17 /* LoadingView */,
+				1A96F58C28A94D8100C79C17 /* NavigationController */,
+				1A501BBC28A71983009EC0B1 /* ProgressView */,
+				1A501BB628A7193C009EC0B1 /* UIImageView */,
+				1A37405728A9ADE300EA87A3 /* View */,
+				1A96F56E28A8643F00C79C17 /* ViewController */,
+				1A96F55628A82D2400C79C17 /* Window */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		1A501BB528A7193C009EC0B1 /* Lable */ = {
+			isa = PBXGroup;
+			children = (
+				1A37405A28A9B1DC00EA87A3 /* Label.swift */,
+			);
+			path = Lable;
+			sourceTree = "<group>";
+		};
+		1A501BB628A7193C009EC0B1 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1A37407228AAFF4300EA87A3 /* UIImage+Extension.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		1A501BB728A7193C009EC0B1 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				1A501BBF28A719EC009EC0B1 /* Button.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		1A501BB828A7193C009EC0B1 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F55228A7B5A200C79C17 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		1A501BB928A7193C009EC0B1 /* CollectionView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1A37406428A9B77600EA87A3 /* CollectionView+Extension.swift */,
+			);
+			path = "CollectionView+Extension";
+			sourceTree = "<group>";
+		};
+		1A501BBC28A71983009EC0B1 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				1A501BBD28A7198D009EC0B1 /* ProgressBarView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		1A501BD128A73162009EC0B1 /* QuizList */ = {
+			isa = PBXGroup;
+			children = (
+				1A501BD328A73162009EC0B1 /* Coordinator */,
+				1A501BD528A73162009EC0B1 /* ViewController */,
+				1A501BD228A73162009EC0B1 /* ViewModel */,
+			);
+			path = QuizList;
+			sourceTree = "<group>";
+		};
+		1A501BD228A73162009EC0B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F54B28A7A99000C79C17 /* QuestionListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A501BD328A73162009EC0B1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1A501BD428A73162009EC0B1 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F57D28A9031100C79C17 /* QuizEndPoint.swift */,
+				1A96F56228A85AE900C79C17 /* QuizService.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		1A501BD528A73162009EC0B1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A37406228A9B6C200EA87A3 /* ChoiceViewItem.swift */,
+				1A8AED2728AC23C800987888 /* ChoiceViewModel.swift */,
+				1A37406028A9B6A600EA87A3 /* QuestionInfoViewItem.swift */,
+				1A96F54D28A7A9AE00C79C17 /* QuestionListViewController.swift */,
+				1A0779B328AC5BBD00CC4BA5 /* QuestionListViewController+CollectionViewExtension.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1A96F54F28A7B35500C79C17 /* AppInitilizer */ = {
+			isa = PBXGroup;
+			children = (
+				1A501BC228A72F2C009EC0B1 /* AppConfiguration.swift */,
+				1A96F55928A831CC00C79C17 /* AppInitializerCoordinator.swift */,
+				1A96F55D28A8530800C79C17 /* AppInitializerViewController.swift */,
+				1A96F55F28A8534C00C79C17 /* AppInitializerViewModel.swift */,
+				1A96F55B28A8322F00C79C17 /* Coordinator.swift */,
+			);
+			path = AppInitilizer;
+			sourceTree = "<group>";
+		};
+		1A96F55628A82D2400C79C17 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		1A96F56128A8536600C79C17 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A501B6A28A7099B009EC0B1 /* AppDelegate.swift */,
+				1A96F55028A7B4D700C79C17 /* DependacyContainer.swift */,
+				1A8AED2228AC059800987888 /* AppMargin.swift */,
+				1A501B6C28A7099B009EC0B1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A96F56E28A8643F00C79C17 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A46121928A9760500193A29 /* BaseViewController.swift */,
+				1A96F56F28A8645300C79C17 /* ViewController+Extension.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1A96F57128A8694300C79C17 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F57228A8696600C79C17 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		1A96F57428A86F0F00C79C17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F57928A871F300C79C17 /* Choice.swift */,
+				1A96F57B28A872C100C79C17 /* LanguageInfo.swift */,
+				1A96F57528A86F2300C79C17 /* QuizInfo.swift */,
+				1A96F57728A86F3900C79C17 /* QuizQuestion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A96F58128A9372D00C79C17 /* QuizInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F58628A938EE00C79C17 /* Coordinator */,
+				1A501BD428A73162009EC0B1 /* EndPoint */,
+				1A96F57428A86F0F00C79C17 /* Model */,
+				1A96F58428A938DC00C79C17 /* ViewController */,
+				1A96F58528A938DC00C79C17 /* ViewModel */,
+			);
+			path = QuizInfo;
+			sourceTree = "<group>";
+		};
+		1A96F58428A938DC00C79C17 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F58228A9378000C79C17 /* QuizInfoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1A96F58528A938DC00C79C17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F58728A93BF500C79C17 /* QuizInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A96F58628A938EE00C79C17 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F54928A7A98200C79C17 /* QuizInfoCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1A96F58C28A94D8100C79C17 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				1A96F58D28A94D8100C79C17 /* NavigationController+Extension.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		1A96F58F28A95F4400C79C17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A8AED2F28AC491F00987888 /* Montserrat-Regular.ttf */,
+				1A96F59128A95F4400C79C17 /* AppIcon.xcassets */,
+				1A96F59428A95F4400C79C17 /* Colors.xcassets */,
+				1A96F59028A95F4400C79C17 /* Images.xcassets */,
+				1A46120F28A967AA00193A29 /* Generated */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A9E34C428AD58FA009A0154 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				1A9E34C528AD592C009A0154 /* Device+Extension.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		1A9E34C728AD6AD0009A0154 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				1A9E34C828AD6AE4009A0154 /* AlertProtocol.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A501B6628A7099B009EC0B1 /* Kahoot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A501B9128A7099D009EC0B1 /* Build configuration list for PBXNativeTarget "Kahoot" */;
+			buildPhases = (
+				1A501B6328A7099B009EC0B1 /* Sources */,
+				1A46122328A9942400193A29 /* swift_Gen */,
+				1A501B6428A7099B009EC0B1 /* Frameworks */,
+				1A501B6528A7099B009EC0B1 /* Resources */,
+				1A501B9A28A71108009EC0B1 /* swift_lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kahoot;
+			packageProductDependencies = (
+				1A8AED2528AC141100987888 /* Kingfisher */,
+			);
+			productName = Kahoot;
+			productReference = 1A501B6728A7099B009EC0B1 /* Kahoot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A501B7C28A7099D009EC0B1 /* KahootTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A501B9428A7099D009EC0B1 /* Build configuration list for PBXNativeTarget "KahootTests" */;
+			buildPhases = (
+				1A501B7928A7099D009EC0B1 /* Sources */,
+				1A501B7A28A7099D009EC0B1 /* Frameworks */,
+				1A501B7B28A7099D009EC0B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A501B7F28A7099D009EC0B1 /* PBXTargetDependency */,
+			);
+			name = KahootTests;
+			productName = KahootTests;
+			productReference = 1A501B7D28A7099D009EC0B1 /* KahootTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A501B8628A7099D009EC0B1 /* KahootUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A501B9728A7099D009EC0B1 /* Build configuration list for PBXNativeTarget "KahootUITests" */;
+			buildPhases = (
+				1A501B8328A7099D009EC0B1 /* Sources */,
+				1A501B8428A7099D009EC0B1 /* Frameworks */,
+				1A501B8528A7099D009EC0B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A501B8928A7099D009EC0B1 /* PBXTargetDependency */,
+			);
+			name = KahootUITests;
+			productName = KahootUITests;
+			productReference = 1A501B8728A7099D009EC0B1 /* KahootUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A501B5F28A7099B009EC0B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1A501B6628A7099B009EC0B1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1A501B7C28A7099D009EC0B1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1A501B6628A7099B009EC0B1;
+					};
+					1A501B8628A7099D009EC0B1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1A501B6628A7099B009EC0B1;
+					};
+				};
+			};
+			buildConfigurationList = 1A501B6228A7099B009EC0B1 /* Build configuration list for PBXProject "Kahoot" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A501B5E28A7099B009EC0B1;
+			packageReferences = (
+				1A8AED2428AC141100987888 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 1A501B6828A7099B009EC0B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A501B6628A7099B009EC0B1 /* Kahoot */,
+				1A501B7C28A7099D009EC0B1 /* KahootTests */,
+				1A501B8628A7099D009EC0B1 /* KahootUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A501B6528A7099B009EC0B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A501B7728A7099C009EC0B1 /* LaunchScreen.storyboard in Resources */,
+				1A96F59628A95F4400C79C17 /* AppIcon.xcassets in Resources */,
+				1A96F59828A95F4400C79C17 /* Colors.xcassets in Resources */,
+				1A8AED3028AC4A8900987888 /* Montserrat-Regular.ttf in Resources */,
+				1A96F59528A95F4400C79C17 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A501B7B28A7099D009EC0B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A501B8528A7099D009EC0B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A46122328A9942400193A29 /* swift_Gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swift_Gen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./scripts/swiftgen.sh\n";
+		};
+		1A501B9A28A71108009EC0B1 /* swift_lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swift_lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ./scripts/swift_lint.sh --build\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A501B6328A7099B009EC0B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8AECE128ABCCCB00987888 /* AnswerResultView.swift in Sources */,
+				1A501BC328A72F2C009EC0B1 /* AppConfiguration.swift in Sources */,
+				1A501B6B28A7099B009EC0B1 /* AppDelegate.swift in Sources */,
+				1A96F55A28A831CC00C79C17 /* AppInitializerCoordinator.swift in Sources */,
+				1A96F55E28A8530800C79C17 /* AppInitializerViewController.swift in Sources */,
+				1A96F56028A8534C00C79C17 /* AppInitializerViewModel.swift in Sources */,
+				1A46121A28A9760500193A29 /* BaseViewController.swift in Sources */,
+				1A501BC028A719EC009EC0B1 /* Button.swift in Sources */,
+				1A96F57A28A871F300C79C17 /* Choice.swift in Sources */,
+				1A8AED2328AC059800987888 /* AppMargin.swift in Sources */,
+				1A37406528A9B77600EA87A3 /* CollectionView+Extension.swift in Sources */,
+				1A96F55C28A8322F00C79C17 /* Coordinator.swift in Sources */,
+				1A96F55128A7B4D700C79C17 /* DependacyContainer.swift in Sources */,
+				1A501BC528A72F92009EC0B1 /* EndPointType.swift in Sources */,
+				1A37406C28AA39AA00EA87A3 /* Font+Extension.swift in Sources */,
+				1A501BC928A73035009EC0B1 /* HTPPHeaders.swift in Sources */,
+				1A0779B428AC5BBD00CC4BA5 /* QuestionListViewController+CollectionViewExtension.swift in Sources */,
+				1A501BC728A73027009EC0B1 /* HTTPTask.swift in Sources */,
+				1A37405B28A9B1DC00EA87A3 /* Label.swift in Sources */,
+				1A96F57C28A872C100C79C17 /* LanguageInfo.swift in Sources */,
+				1A37406F28AA584300EA87A3 /* LayoutConstraint.swift in Sources */,
+				1A9E34C628AD592C009A0154 /* Device+Extension.swift in Sources */,
+				1A96F57328A8696600C79C17 /* LoadingView.swift in Sources */,
+				1A96F58E28A94D8100C79C17 /* NavigationController+Extension.swift in Sources */,
+				1A96F55528A7B62A00C79C17 /* NetWorkService.swift in Sources */,
+				1A96F58028A91FDA00C79C17 /* Parser.swift in Sources */,
+				1A501BBE28A7198D009EC0B1 /* ProgressBarView.swift in Sources */,
+				1A37406328A9B6C200EA87A3 /* ChoiceViewItem.swift in Sources */,
+				1A37406128A9B6A600EA87A3 /* QuestionInfoViewItem.swift in Sources */,
+				1A96F54E28A7A9AE00C79C17 /* QuestionListViewController.swift in Sources */,
+				1A96F54C28A7A99000C79C17 /* QuestionListViewModel.swift in Sources */,
+				1A37407128AA706200EA87A3 /* QuizCountView.swift in Sources */,
+				1A96F57E28A9031100C79C17 /* QuizEndPoint.swift in Sources */,
+				1A9E34C928AD6AE4009A0154 /* AlertProtocol.swift in Sources */,
+				1A37405928A9ADFC00EA87A3 /* QuizTypeView.swift in Sources */,
+				1A96F57628A86F2300C79C17 /* QuizInfo.swift in Sources */,
+				1A96F54A28A7A98200C79C17 /* QuizInfoCoordinator.swift in Sources */,
+				1A96F58328A9378000C79C17 /* QuizInfoViewController.swift in Sources */,
+				1A96F58828A93BF500C79C17 /* QuizInfoViewModel.swift in Sources */,
+				1A96F57828A86F3900C79C17 /* QuizQuestion.swift in Sources */,
+				1A96F56328A85AE900C79C17 /* QuizService.swift in Sources */,
+				1A501B6D28A7099B009EC0B1 /* SceneDelegate.swift in Sources */,
+				1A96F55328A7B5A200C79C17 /* Theme.swift in Sources */,
+				1A37407328AAFF4300EA87A3 /* UIImage+Extension.swift in Sources */,
+				1A37407528AB076700EA87A3 /* UIViewShadow+Extension.swift in Sources */,
+				1A96F57028A8645300C79C17 /* ViewController+Extension.swift in Sources */,
+				1A8AED2828AC23C800987888 /* ChoiceViewModel.swift in Sources */,
+				1A46122128A97BF400193A29 /* XCAssets+Generated.swift in Sources */,
+				1A46122228A97BF400193A29 /* XCColors+Generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A501B7928A7099D009EC0B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A501B8228A7099D009EC0B1 /* KahootTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A501B8328A7099D009EC0B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A501B8C28A7099D009EC0B1 /* KahootUITests.swift in Sources */,
+				1A501B8E28A7099D009EC0B1 /* KahootUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A501B7F28A7099D009EC0B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A501B6628A7099B009EC0B1 /* Kahoot */;
+			targetProxy = 1A501B7E28A7099D009EC0B1 /* PBXContainerItemProxy */;
+		};
+		1A501B8928A7099D009EC0B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A501B6628A7099B009EC0B1 /* Kahoot */;
+			targetProxy = 1A501B8828A7099D009EC0B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A501B7528A7099C009EC0B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A501B7628A7099C009EC0B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A501B8F28A7099D009EC0B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A501B9028A7099D009EC0B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A501B9228A7099D009EC0B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q95X895A6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kahoot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kahoot.Kahoot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A501B9328A7099D009EC0B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q95X895A6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kahoot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kahoot.Kahoot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A501B9528A7099D009EC0B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q95X895A6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kahoot.KahootTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kahoot.app/Kahoot";
+			};
+			name = Debug;
+		};
+		1A501B9628A7099D009EC0B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q95X895A6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kahoot.KahootTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kahoot.app/Kahoot";
+			};
+			name = Release;
+		};
+		1A501B9828A7099D009EC0B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q95X895A6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kahoot.KahootUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kahoot;
+			};
+			name = Debug;
+		};
+		1A501B9928A7099D009EC0B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q95X895A6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kahoot.KahootUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kahoot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A501B6228A7099B009EC0B1 /* Build configuration list for PBXProject "Kahoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A501B8F28A7099D009EC0B1 /* Debug */,
+				1A501B9028A7099D009EC0B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A501B9128A7099D009EC0B1 /* Build configuration list for PBXNativeTarget "Kahoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A501B9228A7099D009EC0B1 /* Debug */,
+				1A501B9328A7099D009EC0B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A501B9428A7099D009EC0B1 /* Build configuration list for PBXNativeTarget "KahootTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A501B9528A7099D009EC0B1 /* Debug */,
+				1A501B9628A7099D009EC0B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A501B9728A7099D009EC0B1 /* Build configuration list for PBXNativeTarget "KahootUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A501B9828A7099D009EC0B1 /* Debug */,
+				1A501B9928A7099D009EC0B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A8AED2428AC141100987888 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A8AED2528AC141100987888 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A8AED2428AC141100987888 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1A501B5F28A7099B009EC0B1 /* Project object */;
+}

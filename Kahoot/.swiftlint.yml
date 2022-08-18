@@ -1,0 +1,54 @@
+# Configuration of lint rules to be used in General.
+
+excluded:
+  - .build
+analyzer_rules:
+  - unused_declaration
+  - unused_import
+opt_in_rules:
+  # File header comments should not be added.
+  - file_header
+  - xctfail_message
+  - force_try
+  - force_cast
+  - shorthand_operator
+  - orphaned_doc_comment
+  - weak_delegate
+  - leading_whitespace
+  - unused_optional_binding
+  - for_where
+  - opening_brace
+  - computed_accessors_order
+  - class_delegate_protocol
+  - duplicate_imports
+  - unused_setter_value
+  - empty_enum_arguments
+  - notification_center_detachment
+  - large_tuple
+  - trailing_newline
+  - trailing_whitespace
+  - colon
+  - closure_parameter_position
+  - mark
+  - todo #  Creates warnings for pending work.
+  - nesting # Number of levels of nesting allowed in enums.
+  - inclusive_language # Words like whitelist triggers a warning.
+  - trailing_comma # Trailing commas in arrays and dictionaries should be enforced.
+  - trailing_whitespace # Lines can have trailing whitespace (improves developer experience in Xcode)
+  - function_parameter_count # Disable maximum limit to function parameter count
+  - type_body_length # Disable maximum limit to type body length
+  - file_length # Disable maximum limit to file length
+  - cyclomatic_complexity # Disable cyclomatic complexity check
+  - multiple_closures_with_trailing_closure # Allow a function to have multiple Closures with Trailing Closure
+
+disabled_rules:
+  - line_length # Disable line length
+  - identifier_name # Disable limit to identifier names
+  - type_name # Disable type name length check
+  - function_body_length # Disable maximum limit to function body length
+  - trailing_whitespace
+  - function_parameter_count
+
+  # Rules to gradually enable in time:
+
+reporter: "xcode"
