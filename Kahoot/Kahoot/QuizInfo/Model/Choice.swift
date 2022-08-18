@@ -1,5 +1,4 @@
 import Foundation
-
 struct Choice: Decodable {
     let answer: String
     let correct: Bool

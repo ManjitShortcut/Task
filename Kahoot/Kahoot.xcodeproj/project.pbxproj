@@ -65,63 +65,6 @@
 		1A96F59828A95F4400C79C17 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A96F59428A95F4400C79C17 /* Colors.xcassets */; };
 		1A9E34C628AD592C009A0154 /* Device+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E34C528AD592C009A0154 /* Device+Extension.swift */; };
 		1A9E34C928AD6AE4009A0154 /* AlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E34C828AD6AE4009A0154 /* AlertProtocol.swift */; };
-		1AAE20A328AE335E006D2A0A /* AnswerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AECE028ABCCCB00987888 /* AnswerResultView.swift */; };
-		1AAE20A428AE335E006D2A0A /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC228A72F2C009EC0B1 /* AppConfiguration.swift */; };
-		1AAE20A528AE335E006D2A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501B6A28A7099B009EC0B1 /* AppDelegate.swift */; };
-		1AAE20A628AE335E006D2A0A /* AppInitializerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55928A831CC00C79C17 /* AppInitializerCoordinator.swift */; };
-		1AAE20A728AE335E006D2A0A /* AppInitializerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55D28A8530800C79C17 /* AppInitializerViewController.swift */; };
-		1AAE20A828AE335E006D2A0A /* AppInitializerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55F28A8534C00C79C17 /* AppInitializerViewModel.swift */; };
-		1AAE20A928AE335E006D2A0A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46121928A9760500193A29 /* BaseViewController.swift */; };
-		1AAE20AA28AE335E006D2A0A /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BBF28A719EC009EC0B1 /* ShadowButton.swift */; };
-		1AAE20AB28AE335E006D2A0A /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57928A871F300C79C17 /* Choice.swift */; };
-		1AAE20AC28AE335E006D2A0A /* AppMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AED2228AC059800987888 /* AppMargin.swift */; };
-		1AAE20AD28AE335E006D2A0A /* CollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406428A9B77600EA87A3 /* CollectionView+Extension.swift */; };
-		1AAE20AE28AE335E006D2A0A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55B28A8322F00C79C17 /* Coordinator.swift */; };
-		1AAE20AF28AE335E006D2A0A /* DependacyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55028A7B4D700C79C17 /* DependacyContainer.swift */; };
-		1AAE20B028AE335E006D2A0A /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC428A72F92009EC0B1 /* EndPointType.swift */; };
-		1AAE20B128AE335E006D2A0A /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406B28AA39AA00EA87A3 /* Font+Extension.swift */; };
-		1AAE20B228AE335E006D2A0A /* HTPPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC828A73035009EC0B1 /* HTPPHeaders.swift */; };
-		1AAE20B328AE335E006D2A0A /* QuestionListViewController+CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0779B328AC5BBD00CC4BA5 /* QuestionListViewController+CollectionViewExtension.swift */; };
-		1AAE20B428AE335E006D2A0A /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC628A73027009EC0B1 /* HTTPTask.swift */; };
-		1AAE20B528AE335E006D2A0A /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37405A28A9B1DC00EA87A3 /* Label.swift */; };
-		1AAE20B628AE335E006D2A0A /* LanguageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57B28A872C100C79C17 /* LanguageInfo.swift */; };
-		1AAE20B728AE335E006D2A0A /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406E28AA584300EA87A3 /* LayoutConstraint.swift */; };
-		1AAE20B828AE335E006D2A0A /* Device+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E34C528AD592C009A0154 /* Device+Extension.swift */; };
-		1AAE20B928AE335E006D2A0A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57228A8696600C79C17 /* LoadingView.swift */; };
-		1AAE20BA28AE335E006D2A0A /* NavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F58D28A94D8100C79C17 /* NavigationController+Extension.swift */; };
-		1AAE20BB28AE335E006D2A0A /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55428A7B62A00C79C17 /* NetWorkService.swift */; };
-		1AAE20BC28AE335E006D2A0A /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57F28A91FDA00C79C17 /* Parser.swift */; };
-		1AAE20BD28AE335E006D2A0A /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BBD28A7198D009EC0B1 /* ProgressBarView.swift */; };
-		1AAE20BE28AE335E006D2A0A /* ChoiceViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406228A9B6C200EA87A3 /* ChoiceViewItem.swift */; };
-		1AAE20BF28AE335E006D2A0A /* QuestionInfoViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406028A9B6A600EA87A3 /* QuestionInfoViewItem.swift */; };
-		1AAE20C028AE335E006D2A0A /* QuestionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F54D28A7A9AE00C79C17 /* QuestionListViewController.swift */; };
-		1AAE20C128AE335E006D2A0A /* QuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F54B28A7A99000C79C17 /* QuestionListViewModel.swift */; };
-		1AAE20C228AE335E006D2A0A /* QuizCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37407028AA706200EA87A3 /* QuizCountView.swift */; };
-		1AAE20C328AE335E006D2A0A /* QuizEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57D28A9031100C79C17 /* QuizEndPoint.swift */; };
-		1AAE20C428AE335E006D2A0A /* AlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E34C828AD6AE4009A0154 /* AlertProtocol.swift */; };
-		1AAE20C528AE335E006D2A0A /* QuizTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37405828A9ADFC00EA87A3 /* QuizTypeView.swift */; };
-		1AAE20C628AE335E006D2A0A /* QuizInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57528A86F2300C79C17 /* QuizInfo.swift */; };
-		1AAE20C728AE335E006D2A0A /* QuizInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F54928A7A98200C79C17 /* QuizInfoCoordinator.swift */; };
-		1AAE20C828AE335E006D2A0A /* QuizInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F58228A9378000C79C17 /* QuizInfoViewController.swift */; };
-		1AAE20C928AE335E006D2A0A /* QuizInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F58728A93BF500C79C17 /* QuizInfoViewModel.swift */; };
-		1AAE20CA28AE335E006D2A0A /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F57728A86F3900C79C17 /* QuizQuestion.swift */; };
-		1AAE20CB28AE335E006D2A0A /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F56228A85AE900C79C17 /* QuizService.swift */; };
-		1AAE20CC28AE335E006D2A0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501B6C28A7099B009EC0B1 /* SceneDelegate.swift */; };
-		1AAE20CD28AE335E006D2A0A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F55228A7B5A200C79C17 /* Theme.swift */; };
-		1AAE20CE28AE335E006D2A0A /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37407228AAFF4300EA87A3 /* UIImage+Extension.swift */; };
-		1AAE20CF28AE335E006D2A0A /* UIViewShadow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37407428AB076700EA87A3 /* UIViewShadow+Extension.swift */; };
-		1AAE20D028AE335E006D2A0A /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F56F28A8645300C79C17 /* ViewController+Extension.swift */; };
-		1AAE20D128AE335E006D2A0A /* ChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AED2728AC23C800987888 /* ChoiceViewModel.swift */; };
-		1AAE20D228AE335E006D2A0A /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46121F28A97BF400193A29 /* XCAssets+Generated.swift */; };
-		1AAE20D328AE335E006D2A0A /* XCColors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46122028A97BF400193A29 /* XCColors+Generated.swift */; };
-		1AAE20D628AE335E006D2A0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1AAE20A028AE335E006D2A0A /* Kingfisher */; };
-		1AAE20D828AE335E006D2A0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A501B7528A7099C009EC0B1 /* LaunchScreen.storyboard */; };
-		1AAE20D928AE335E006D2A0A /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A96F59128A95F4400C79C17 /* AppIcon.xcassets */; };
-		1AAE20DA28AE335E006D2A0A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A96F59428A95F4400C79C17 /* Colors.xcassets */; };
-		1AAE20DB28AE335E006D2A0A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A8AED2F28AC491F00987888 /* Montserrat-Regular.ttf */; };
-		1AAE20DC28AE335E006D2A0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A96F59028A95F4400C79C17 /* Images.xcassets */; };
-		1AAE20E528AE39D1006D2A0A /* QuestionListViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE20E328AE3401006D2A0A /* QuestionListViewModelTestCase.swift */; };
-		1AAE210C28AE5AD8006D2A0A /* QuestionListUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE210B28AE5AD8006D2A0A /* QuestionListUITestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1314,6 +1257,7 @@
 			};
 			name = Release;
 		};
+
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1381,6 +1325,7 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */

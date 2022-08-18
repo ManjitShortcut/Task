@@ -165,7 +165,6 @@ class QuestionListViewController: BaseViewController {
         progressBar.borderColor = theme?.fuchsiaBlue20 ?? .blue
         progressBar.fillColor = theme?.fuchsiaBlue ?? .blue
         progressBar.textColor = theme?.white ?? .white
-
         progressBar.translatesAutoresizingMaskIntoConstraints = false
         let margins = view.layoutMarginsGuide
         NSLayoutConstraint.activate([
@@ -245,6 +244,7 @@ class QuestionListViewController: BaseViewController {
     /// Voice over announcement:
     /// - Announce voice over when selected option wrong or correct
     /// - Announce voice over when time out
+
     private func postVoiceOverAnnouncement(_ announcement: String = "") {
         if UIAccessibility.isVoiceOverRunning {
             UIAccessibility.post(notification: .announcement, argument: announcement)
@@ -262,15 +262,6 @@ class QuestionListViewController: BaseViewController {
 
 extension QuestionListViewController: QuestionListViewModelDelegate {
     
-    /// Update button Title
-    ///
-    /// Update button title based on based on question index
-    /// - If question is last the the button title should be Finish
-    /// - Other wise continue
-    func questionListViewModel(_ questionListViewModel: QuestionListViewModel, didUpdateContinueButtonTitle title: String) {
-        continueButton.title = title
-    }
-
     /// Update  time out
     func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
                                didUpdateTimeOut value: Int) {

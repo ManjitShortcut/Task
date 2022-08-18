@@ -35,7 +35,7 @@ final class QuestionListViewModel {
             
         }
     }
-    
+
     private weak var coordinator: QuestionListViewModelCoordinating?
     private var quizInfo: QuizInfo
     

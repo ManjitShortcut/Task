@@ -48,12 +48,12 @@ class ChoiceViewItem: ShadowCollectionViewItem {
         if UIDevice.current.isIPad {
             choiceInfoLabel.style = .Mont24
         } 
+
         NSLayoutConstraint.activate([
             choiceInfoLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             choiceInfoLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             choiceInfoLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
             choiceInfoLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-
             shapeImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
             shapeImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             

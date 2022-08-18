@@ -36,12 +36,11 @@ class Label: UILabel {
     // MARK: - Private methods
 
     private func setup() {
-        // Set up accessibility stuff here?
         adjustsFontForContentSizeCategory = true
         numberOfLines = 0
         setFontStyle(style: style)
     }
-    
+
     private func setFontStyle(style: Style) {
         font = style.font(textStyle: textStyle,
                           dynamic: adjustsFontForContentSizeCategory)
