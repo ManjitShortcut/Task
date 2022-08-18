@@ -25,6 +25,7 @@ class QuestionListViewController: BaseViewController {
         collectionView.delegate = self
         collectionView.backgroundColor = .clear
         collectionView.register(ChoiceViewItem.self)
+        collectionView.isScrollEnabled = false
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
@@ -102,11 +103,9 @@ class QuestionListViewController: BaseViewController {
         view.addSubview(questionInfoView)
         view.addSubview(continueButton)
         view.addSubview(collectionView)
-        
+    
         setUpLayout()
         setUpTheme()
-        
-        
     }
     
     private func setUpLayout() {
@@ -261,6 +260,9 @@ class QuestionListViewController: BaseViewController {
 // MARK: - QuestionListViewModelDelegate
 
 extension QuestionListViewController: QuestionListViewModelDelegate {
+    func questionListViewModel(_ questionListViewModel: QuestionListViewModel, didUpdateContinueButtonTitle title: String) {
+        continueButton.title = title
+    }
     
     /// Update  time out
     func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
@@ -271,12 +273,10 @@ extension QuestionListViewController: QuestionListViewModelDelegate {
     /// Show  alert that there are no choice answer for question
     ///
     func questionListViewModelDidFailToGetOptions(_ questionListViewModel: QuestionListViewModel) {
-        self.showAlert(with: "Sorry",
-                       message: "Unable to find question options.",
-                       closeActionTitle: "Move Next") { [weak self] in
+        showAlert(with: "Sorry", message: "Unable to find question options.", closeActionTitle: "Move Next", closeActionCompletion: { [weak self] in
             self?.removeProgressView()
             self?.viewModel.didTappedContinueButton()
-        }
+        }, otherActionTitle: nil)
     }
     
     /// Wrong Answer

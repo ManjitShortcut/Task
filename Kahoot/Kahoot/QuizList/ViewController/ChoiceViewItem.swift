@@ -1,6 +1,5 @@
 import Foundation
 import UIKit
-
 class ChoiceViewItem: ShadowCollectionViewItem {
 
     var choiceStatusLeadingConstraint: NSLayoutConstraint?
@@ -54,8 +53,8 @@ class ChoiceViewItem: ShadowCollectionViewItem {
             choiceInfoLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             choiceInfoLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
             choiceInfoLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-            shapeImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
-            shapeImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            shapeImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
+            shapeImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4),
             
             choiceResultIconImageView.heightAnchor.constraint(equalToConstant: 32),
             choiceResultIconImageView.widthAnchor.constraint(equalToConstant: 32),
@@ -77,34 +76,34 @@ class ChoiceViewItem: ShadowCollectionViewItem {
         case .timeOut:
             isUserInteractionEnabled = false
             contentView.backgroundColor = viewModel.getChoiceStatusBackgroundColor()
-            shadowLayer.backgroundColor = contentView.backgroundColor?.cgColor
+            shadowLayer.backgroundColor = viewModel.getChoiceStatusBackgroundColor()?.cgColor
             choiceResultIconImageView.isHidden = false
             choiceResultIconImageView.image = viewModel.getChoiceStatusIcon()
             isUserInteractionEnabled = false
 
-//            switch viewModel.getChoicePositionDirection() {
-//            case .left:
-//                NSLayoutConstraint.activate([
-//                    choiceResultIconImageView.leadingAnchor.constraint(equalTo: leadingAnchor)])
-//
-//            case .right:
-//            }
+            switch viewModel.getChoicePositionDirection() {
+            case .left:
+                choiceResultIconImageView.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
+            case .right:
+                choiceResultIconImageView.frame = CGRect(x: self.frame.size.width - 32, y: 0, width: 32, height: 32)
+            }
                 
         case .normal:
             shapeImageView.isHidden = false
             isUserInteractionEnabled = true
             shapeImageView.image = viewModel.getImageShapeForPosition()
             contentView.backgroundColor = viewModel.getBackgroundColorForPosition()
-            shadowLayer.backgroundColor = contentView.backgroundColor?.cgColor
+            shadowLayer.backgroundColor =  viewModel.getBackgroundColorForPosition()?.cgColor
         case .selectChoice:
             isUserInteractionEnabled = false
             shapeImageView.isHidden = false
             shapeImageView.image = viewModel.getImageShapeForPosition()
             if viewModel.didUserSelectOption {
                 contentView.backgroundColor = viewModel.getBackgroundColorForPosition()
+                shadowLayer.backgroundColor = viewModel.getBackgroundColorForPosition()?.cgColor
             } else {
-                contentView.alpha = 0.3
-                shadowLayer.opacity = 0.1
+                contentView.alpha = 0.5
+                shadowLayer.opacity = 0.0
             }
         }
     }

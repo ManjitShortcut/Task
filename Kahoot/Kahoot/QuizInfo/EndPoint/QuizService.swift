@@ -7,9 +7,9 @@ protocol QuizServiceProtocol {
 
 struct QuizService: QuizServiceProtocol {
 
-    let apiService: NetworkService
+    let apiService: NetworkServiceProtocol
 
-    init(apiService: NetworkService) {
+    init(apiService: NetworkServiceProtocol) {
         self.apiService = apiService
     }
     

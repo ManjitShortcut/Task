@@ -79,7 +79,7 @@ class QuestionInfoViewItem: UIView {
             
             questionLabel.topAnchor.constraint(equalTo: questionImageView.bottomAnchor, constant: UIDevice.current.isIPad ? 22 * 2 : 2 * .defaultSpacing),
             
-            questionLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: UIDevice.current.isIPad ? -22 : .defaultSpacing),
+            questionLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: UIDevice.current.isIPad ? -22 : -.defaultSpacing),
             questionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: UIDevice.current.isIPad ? .double : .single),
             questionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: UIDevice.current.isIPad ? -.double : -.single),
             
@@ -88,7 +88,6 @@ class QuestionInfoViewItem: UIView {
             questionBgView.bottomAnchor.constraint(equalTo: bottomAnchor),
             questionBgView.heightAnchor.constraint(equalTo: questionLabel.heightAnchor,
                                                    constant: UIDevice.current.isIPad ? 22 * 2 : 2 * .defaultSpacing)
-
         ])
         
         questionImageView.setContentHuggingPriority(.defaultLow, for: .vertical)
