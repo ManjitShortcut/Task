@@ -46,7 +46,7 @@ class NetworkService: NSObject, URLSessionTaskDelegate {
         }
     }
     
-  // TODO: Add other request form
+     // TODO: Add other request form
     /// Add Request body
     /// Url encoding
         
@@ -74,7 +74,6 @@ extension NetworkService: NetworkServiceProtocol {
             } catch {
                 throw error
             }
-            
         } catch {
             throw error
         }
