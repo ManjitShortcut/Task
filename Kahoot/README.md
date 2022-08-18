@@ -35,17 +35,20 @@ In order to run this app in your simulator, perform the following steps:
 ## New Feature
  If a new feature is added then follow this folder structere
 Ex- Quiz
- Then folder structure will be quiz is the parent strucure and 
+ Then folder structure will be 
  
-* Quiz
-  
-
-
+* Quiz As parent folder 
+* ViewController
+* ViewModel
+* Api
+* Coordinator
+* Model
 
 ### Reusable Class
 * Shadow Button: Which is responsible for all default shadow button
-
-* Shadow Button: 
+* Lable: It the subclass of UILable.
+* ShadowCollectionViewItem: It is pare nt calss for Choice view cell. Shadow alreday added here. 
+  If you modified the shadoe then respective child class will affected.
 
 ### NB:
 Follow docC for documentation 
