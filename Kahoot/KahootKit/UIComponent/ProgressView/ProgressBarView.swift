@@ -143,7 +143,6 @@ open class ProgressBarView: UIView {
         progressLayerAnimation.fillMode = CAMediaTimingFillMode.removed
         progressLayerAnimation.isRemovedOnCompletion = true
         progressViewLayer.add(progressLayerAnimation, forKey: "widthAnimation")
-        
         textLayerAnimation.duration = animationDuration - 0.5
         if UIDevice.current.isIPad {
             textLayerAnimation.fromValue = viewWidth - 40

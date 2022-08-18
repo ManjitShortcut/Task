@@ -1,3 +1,10 @@
+# project-base
+A base setup to form a live iOS app with less efforts
+
+Swift lint is called from project build phase script and guided by swift_lint.sh script
+Swift format can be triggered by running "sh ./scripts/pre_pr.sh"
+Use "sh ./scripts/swiftgen.sh" to generate helper files (like lokalistaion colors and app assets)
+
 # Task
 
 ### Prerequisites
@@ -53,11 +60,4 @@ In order to run this app in your simulator, perform the following steps:
 * Property: All public property in a class at the top follow by private property, then all ui element
 * All public method should be on the top with group by #pargma mark Public method then by private methods group by #pargma mark private method
 
- 
-
-
-
-
-
- 
-
+##NB: Remember add child coordinator to parent coordinator array and also remove child coordinator when pop/dismissed the view
