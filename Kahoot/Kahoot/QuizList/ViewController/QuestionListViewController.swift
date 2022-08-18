@@ -105,6 +105,8 @@ class QuestionListViewController: BaseViewController {
         
         setUpLayout()
         setUpTheme()
+        
+        
     }
     
     private func setUpLayout() {
@@ -112,6 +114,7 @@ class QuestionListViewController: BaseViewController {
         if UIDevice.current.isIPad {
             collectionViewLayout.minimumLineSpacing = 16
             collectionViewLayout.minimumInteritemSpacing = 16
+            continueButton.setFont(size: .Montserrat20)
         }
         
         let margins = view.layoutMarginsGuide

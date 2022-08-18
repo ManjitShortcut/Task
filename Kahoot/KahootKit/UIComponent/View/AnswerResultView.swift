@@ -36,7 +36,6 @@ class AnswerResultView: UIView {
         return titleLabel
     }()
     
-    
     // MARK: - Life Cycle
 
     init(_ status: ChoiceStatus,
@@ -66,8 +65,6 @@ class AnswerResultView: UIView {
     }
     
     private func setupLayout() {
-        titleLabel.style = .Mont20
-
         if UIDevice.current.isIPad {
             titleLabel.style = .Mont28
         }

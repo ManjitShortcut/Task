@@ -65,6 +65,8 @@ extension Label {
         /** Montserrat UI (20pt) - Normal */
         case Mont20
         
+        case Mont24
+
         /** Montserrat UI (20pt) - Normal */
         case Mont28
 
@@ -90,6 +92,9 @@ extension Label {
             case .Mont20:
                 return .font(ofSize: .Montserrat20, weight: .regular, textStyle: textStyle)
                 
+            case .Mont24:
+                return .font(ofSize: .Montserrat24, weight: .regular, textStyle: textStyle)
+
             case .Mont28:
                 return .font(ofSize: .Montserrat28, weight: .regular, textStyle: textStyle)
 

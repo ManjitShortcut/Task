@@ -142,7 +142,7 @@ final class QuestionListViewModel {
     @objc private func calculateTimeOut() {
         
         remainingTime -= 1
-        if remainingTime > 0 {
+        if remainingTime >= 0 {
             delegate?.questionListViewModel(self, didUpdateTimeOut: remainingTime)
         } else {
             inValidateTimeOut()

@@ -68,21 +68,26 @@ class QuestionInfoViewItem: UIView {
     
     private func setUpLayout() {
        
+        if UIDevice.current.isIPad {
+            questionLabel.style = .Mont28
+        }
+        
         NSLayoutConstraint.activate([
             questionImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: .defaultSpacing),
             questionImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -.defaultSpacing),
             questionImageView.topAnchor.constraint(equalTo: topAnchor, constant: .defaultSpacing),
-            questionLabel.topAnchor.constraint(equalTo: questionImageView.bottomAnchor, constant: 2 * .defaultSpacing),
             
-            questionLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -.defaultSpacing),
-            questionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: UIDevice.current.isIPad ? .single : .double),
-            questionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: UIDevice.current.isIPad ? -.single : -.double),
+            questionLabel.topAnchor.constraint(equalTo: questionImageView.bottomAnchor, constant: UIDevice.current.isIPad ? 22 * 2 : 2 * .defaultSpacing),
+            
+            questionLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: UIDevice.current.isIPad ? -22 : .defaultSpacing),
+            questionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: UIDevice.current.isIPad ? .double : .single),
+            questionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: UIDevice.current.isIPad ? -.double : -.single),
             
             questionBgView.leadingAnchor.constraint(equalTo: leadingAnchor),
             questionBgView.trailingAnchor.constraint(equalTo: trailingAnchor),
             questionBgView.bottomAnchor.constraint(equalTo: bottomAnchor),
             questionBgView.heightAnchor.constraint(equalTo: questionLabel.heightAnchor,
-                                                   constant: 2 * .defaultSpacing)
+                                                   constant: UIDevice.current.isIPad ? 22 * 2 : 2 * .defaultSpacing)
 
         ])
         

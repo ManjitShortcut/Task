@@ -12,6 +12,7 @@ extension UIFont {
         case Montserrat14
         case Montserrat16
         case Montserrat20
+        case Montserrat24
         case Montserrat28
 
         var value: CGFloat {
@@ -28,6 +29,8 @@ extension UIFont {
                 return 20
             case .Montserrat28:
                 return 28
+            case .Montserrat24:
+                return 24
             }
         }
     }

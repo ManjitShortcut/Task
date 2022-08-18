@@ -32,7 +32,7 @@ class ShadowButton: UIButton {
         super.init(frame: CGRect.zero)
         updateStyle()
         updateShape()
-        setFont()
+        setFont(size: .Montserrat16)
         titleLabel?.textAlignment = .center
     }
    
@@ -67,8 +67,8 @@ class ShadowButton: UIButton {
         setTitle(title, for: .selected)
     }
     
-    private func setFont() {
-        titleLabel?.font =  .font(ofSize: .Montserrat16,
+    func setFont(size: UIFont.FontSize) {
+        titleLabel?.font =  .font(ofSize:  size,
                      weight: .regular,
                                   textStyle: .body)
     }
