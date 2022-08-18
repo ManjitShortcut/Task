@@ -1,8 +1,8 @@
 # Task
 
 ### Prerequisites
-* Xcode 12.5 or above
-* Pod
+* Xcode 13.4 or above
+* Package
 * Swiftlint
 * SwiftGen
 * >= iOS 14
