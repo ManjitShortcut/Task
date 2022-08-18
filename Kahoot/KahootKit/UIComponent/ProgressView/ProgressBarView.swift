@@ -96,10 +96,10 @@ open class ProgressBarView: UIView {
         progressViewLayer.frame = progressRect
         if UIDevice.current.isIPad {
             progressValueLabel.style = .Mont20
-            progressValueLabel.frame = CGRect(x: rect.width - 50 , y: (rect.height - 24)/2, width: 40, height: 24)
+            progressValueLabel.frame = CGRect(x: rect.width - 40 , y: (rect.height - 24)/2, width: 40, height: 24)
         } else {
             progressValueLabel.style = .Mont12
-            progressValueLabel.frame = CGRect(x: rect.width - 25 , y: (rect.height - 14)/2, width: 20, height: 14)
+            progressValueLabel.frame = CGRect(x: rect.width - 20 , y: (rect.height - 14)/2, width: 20, height: 14)
         }
     }
 
@@ -146,9 +146,9 @@ open class ProgressBarView: UIView {
         
         textLayerAnimation.duration = animationDuration - 0.5
         if UIDevice.current.isIPad {
-            textLayerAnimation.fromValue = viewWidth - 50
+            textLayerAnimation.fromValue = viewWidth - 40
         } else {
-            textLayerAnimation.fromValue = viewWidth - 25
+            textLayerAnimation.fromValue = viewWidth - 20
         }
         textLayerAnimation.toValue = 0
         textLayerAnimation.fillMode = CAMediaTimingFillMode.removed
