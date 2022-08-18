@@ -49,6 +49,3 @@ Ex- Quiz
 * Lable: It the subclass of UILable.
 * ShadowCollectionViewItem: It is pare nt calss for Choice view cell. Shadow alreday added here. 
   If you modified the shadoe then respective child class will affected.
-
-### NB:
-Follow docC for documentation 
