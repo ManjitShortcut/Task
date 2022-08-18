@@ -19,7 +19,7 @@ class ChoiceViewItem: ShadowCollectionViewItem {
     }()
     
     private lazy var choiceInfoLabel: Label = {
-        let choiceInfoLabel = Label(style: .Mont16)
+        let choiceInfoLabel = Label(style: .Mont14)
         choiceInfoLabel.textAlignment = .center
         choiceInfoLabel.textColor = .white
         choiceInfoLabel.textDropShadow(shadowColor: Color.textShadow.color)
@@ -45,7 +45,9 @@ class ChoiceViewItem: ShadowCollectionViewItem {
         contentView.addSubview(choiceInfoLabel)
         contentView.addSubview(shapeImageView)
         contentView.addSubview(choiceResultIconImageView)
-        
+        if UIDevice.current.isIPad {
+            choiceInfoLabel.style = .Mont24
+        } 
         NSLayoutConstraint.activate([
             choiceInfoLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             choiceInfoLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),

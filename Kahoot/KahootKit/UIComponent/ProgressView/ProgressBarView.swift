@@ -60,11 +60,13 @@ open class ProgressBarView: UIView {
          return progressLayer
     }()
     
-    private var progressValueLabel: UILabel = {
+    private var progressValueLabel: Label = {
         let progressValueLabel = Label(style: .Mont12)
         progressValueLabel.textAlignment = .left
         progressValueLabel.translatesAutoresizingMaskIntoConstraints = false
         progressValueLabel.backgroundColor = .clear
+        progressValueLabel.adjustsFontSizeToFitWidth = true
+        progressValueLabel.sizeToFit()
         return progressValueLabel
     }()
     
@@ -92,7 +94,13 @@ open class ProgressBarView: UIView {
         progressViewLayer.position = CGPoint(x: 0, y: 0)
         progressViewLayer.anchorPoint = CGPoint(x: 0, y: 0.5)
         progressViewLayer.frame = progressRect
-        progressValueLabel.frame = CGRect(x: rect.width - 30 , y: 0, width: 20, height: rect.height)
+        if UIDevice.current.isIPad {
+            progressValueLabel.style = .Mont20
+            progressValueLabel.frame = CGRect(x: rect.width - 50 , y: (rect.height - 24)/2, width: 40, height: 24)
+        } else {
+            progressValueLabel.style = .Mont12
+            progressValueLabel.frame = CGRect(x: rect.width - 25 , y: (rect.height - 14)/2, width: 20, height: 14)
+        }
     }
 
     public override func layoutSubviews() {
@@ -136,8 +144,12 @@ open class ProgressBarView: UIView {
         progressLayerAnimation.isRemovedOnCompletion = true
         progressViewLayer.add(progressLayerAnimation, forKey: "widthAnimation")
         
-        textLayerAnimation.duration = animationDuration
-        textLayerAnimation.fromValue = viewWidth - 25
+        textLayerAnimation.duration = animationDuration - 0.5
+        if UIDevice.current.isIPad {
+            textLayerAnimation.fromValue = viewWidth - 50
+        } else {
+            textLayerAnimation.fromValue = viewWidth - 30
+        }
         textLayerAnimation.toValue = 0
         textLayerAnimation.fillMode = CAMediaTimingFillMode.removed
         textLayerAnimation.isRemovedOnCompletion = true
