@@ -7,11 +7,11 @@ public enum ParserError: Error {
 
 public protocol DecodableParserProtocol {
     associatedtype ParsedObject
-    func parse<T: Decodable>(data: Data?) -> Result<T, Error>
+    func parse<T: Decodable>(data: Data?) async throws -> T
 }
 
 struct JSONDecodeableParser<T: Decodable>: DecodableParserProtocol {
-   
+    
     typealias ParsedObject = T
     let jsonDecoder: JSONDecoder
     
@@ -19,12 +19,15 @@ struct JSONDecodeableParser<T: Decodable>: DecodableParserProtocol {
         self.jsonDecoder = decoder
     }
 
-    public func parse<T>(data: Data?) -> Result<T, Error> where T: Decodable {
+    func parse<T>(data: Data?) async throws -> T where T: Decodable {
         guard let data = data else {
-            return .failure(ParserError.dataMissing)
+            throw ParserError.dataMissing
         }
-        return Result { try jsonDecoder.decode(T.self, from: data) }.mapError { error in
-            ParserError.internalParserError(error)
+        do {
+           return try jsonDecoder.decode(T.self, from: data)
+        } catch {
+            throw error
         }
     }
+    
 }

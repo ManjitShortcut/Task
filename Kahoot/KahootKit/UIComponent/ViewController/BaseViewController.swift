@@ -50,6 +50,7 @@ extension BaseViewController: LoaderProtocol {
     }
     
     func hideLoading() {
+
         loadIngView.removeFromSuperview()
     }
 }

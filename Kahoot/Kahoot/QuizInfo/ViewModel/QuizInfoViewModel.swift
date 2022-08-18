@@ -41,17 +41,19 @@ class QuizInfoViewModel {
 
     func didFetchQuiz() {
         delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .progress)
-        apiService.fetchQuizList(forQuizId: quizInfoId ) { [weak self] result in
-            guard let self = self else {
-                return
-            }
-            switch result {
-            case .success(let quizInfo):
-                self.delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .success)
-                self.coordinator?.quizInfoViewModel(self, didNavigateToQuiz: quizInfo)
-            case .failure(let error):
-                self.delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .fail(error: error))
-                self.coordinator?.quizInfoViewModel(self, didFailedToFetchQuizInfo: error)
+        Task {
+            do {
+                let quizInfo = try await apiService.fetchQuizList(forQuizId: quizInfoId)
+                DispatchQueue.main.async {
+                    self.delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .success)
+                    self.coordinator?.quizInfoViewModel(self, didNavigateToQuiz: quizInfo)
+                }
+            } catch {
+                
+                DispatchQueue.main.async {
+                    self.delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .fail(error: error))
+                    self.coordinator?.quizInfoViewModel(self, didFailedToFetchQuizInfo: error)
+                }
             }
         }
     }
