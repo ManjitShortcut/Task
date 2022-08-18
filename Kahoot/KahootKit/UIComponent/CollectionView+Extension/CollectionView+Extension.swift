@@ -14,7 +14,6 @@ extension ReusableCell {
 
 extension UICollectionReusableView: ReusableCell {}
 
-
 extension UICollectionView {
     
     func register(_ cellClass: UICollectionViewCell.Type) {

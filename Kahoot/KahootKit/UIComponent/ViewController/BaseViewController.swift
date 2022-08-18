@@ -28,7 +28,7 @@ class BaseViewController: UIViewController {
             backGroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
             backGroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             backGroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            backGroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            backGroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 }
@@ -45,7 +45,7 @@ extension BaseViewController: LoaderProtocol {
             loadIngView.topAnchor.constraint(equalTo: view.topAnchor),
             loadIngView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             loadIngView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            loadIngView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            loadIngView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
     

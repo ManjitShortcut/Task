@@ -68,7 +68,7 @@ class ShadowButton: UIButton {
     }
     
     func setFont(size: UIFont.FontSize) {
-        titleLabel?.font =  .font(ofSize:  size,
+        titleLabel?.font =  .font(ofSize: size,
                      weight: .regular,
                                   textStyle: .body)
     }

@@ -1,8 +1,5 @@
 # project-base
-A base setup to form a live iOS app with less efforts
 
-Swift lint is called from project build phase script and guided by swift_lint.sh script
-Swift format can be triggered by running "sh ./scripts/pre_pr.sh"
 Use "sh ./scripts/swiftgen.sh" to generate helper files (like lokalistaion colors and app assets)
 
 # Task
