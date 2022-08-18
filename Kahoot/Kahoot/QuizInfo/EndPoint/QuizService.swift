@@ -1,8 +1,7 @@
 import Foundation
 
 protocol QuizServiceProtocol {
-    func fetchQuizList(forQuizId quizId: String,
-                       withCompletionHandler completion: @escaping (Result<QuizInfo, Error>) -> Void)
+    func fetchQuizList(forQuizId quizId: String) async throws -> QuizInfo
 }
 
 struct QuizService: QuizServiceProtocol {
@@ -13,19 +12,13 @@ struct QuizService: QuizServiceProtocol {
         self.apiService = apiService
     }
     
-    func fetchQuizList(forQuizId quizId: String,
-                       withCompletionHandler completion: @escaping (Result<QuizInfo, Error>) -> Void) {
+    func fetchQuizList(forQuizId quizId: String) async throws -> QuizInfo {
 
-        apiService.request(QuizEndPoint.getQuizList(quizId: quizId), completion: { data, _, error in
-            if let networkError = error {
-                completion(.failure(networkError))
-            } else {
-                
-                DispatchQueue.main.async {
-                    let result: Result<QuizInfo, Error> = JSONDecodeableParser<QuizInfo>().parse(data: data)
-                    completion(result)
-                }
-            }
-        })
+        do {
+            let result = try await apiService.request(QuizEndPoint.getQuizList(quizId: quizId))
+            return try await JSONDecodeableParser<QuizInfo>().parse(data: result.data)
+        } catch {
+           throw error
+        }
     }
 }

@@ -1,6 +1,4 @@
-
 import Foundation
-
 public typealias NetworkCompletion = (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void
 
 public enum NetworkError: String, Error {
@@ -9,12 +7,21 @@ public enum NetworkError: String, Error {
 }
 
 public protocol NetworkServiceProtocol {
-    func request(_ route: EndPointType,
-                 completion: @escaping NetworkCompletion)
+    func request(_ route: EndPointType) async throws -> ResponseResult
     func cancel()
 }
 
-class NetworkService: NSObject {
+public struct ResponseResult {
+    
+    let data: Data?
+    let urlResponse: URLResponse?
+    init(data: Data?, response: URLResponse?) {
+        self.data = data
+        self.urlResponse = response
+    }
+}
+
+class NetworkService: NSObject, URLSessionTaskDelegate {
     
     private var task: URLSessionTask?
     private let session: URLSession
@@ -30,16 +37,16 @@ class NetworkService: NSObject {
     
     // MARK: Private functions
     
-    private func performRequest(_ request: URLRequest,
-                                completion: @escaping NetworkCompletion) {
-        task = session.dataTask(with: request,
-                                completionHandler: { data, response, error in
-            completion(data, response, error)
-        })
-        task?.resume()
+    private func performRequest(_ request: URLRequest) async throws -> ResponseResult {
+        do {
+            let result = try await session.data(for: request, delegate: self)
+            return ResponseResult(data: result.0, response: result.1)
+        } catch {
+            throw error
+        }
     }
     
-  // TODO: Add other request form
+     // TODO: Add other request form
     /// Add Request body
     /// Url encoding
         
@@ -59,13 +66,16 @@ class NetworkService: NSObject {
 
 extension NetworkService: NetworkServiceProtocol {
     
-    func request(_ route: EndPointType,
-                 completion: @escaping NetworkCompletion) {
+    func request(_ route: EndPointType) async throws -> ResponseResult {
         do {
             let request = try buildRequest(from: route)
-            performRequest(request, completion: completion)
+            do {
+                return try await performRequest(request)
+            } catch {
+                throw error
+            }
         } catch {
-            completion(nil, nil, NetworkError.unableCreateRequest)
+            throw error
         }
     }
     

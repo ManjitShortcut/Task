@@ -21,6 +21,7 @@ In order to run this app in your simulator, perform the following steps:
 
 ### Design Pattern
 * 'MVVM' + 'COORDINATOR'
+* API Call is on Async Await
 
 
 ## Project Structure Info
