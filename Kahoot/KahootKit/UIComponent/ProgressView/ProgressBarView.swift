@@ -142,6 +142,7 @@ open class ProgressBarView: UIView {
     }
     
     func didUpdatedProgressView() {
+    
         progressLayerAnimation.delegate = self
         progressLayerAnimation.duration = animationDuration
         progressLayerAnimation.fromValue = viewWidth

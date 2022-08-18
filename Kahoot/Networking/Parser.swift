@@ -10,7 +10,7 @@ public protocol DecodableParserProtocol {
     func parse<T: Decodable>(data: Data?) async throws -> T
 }
 
-struct JSONDecodeableParser<T: Decodable>: DecodableParserProtocol {
+struct JSONDecodeAbleParser<T: Decodable>: DecodableParserProtocol {
     
     typealias ParsedObject = T
     let jsonDecoder: JSONDecoder

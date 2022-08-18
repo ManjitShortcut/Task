@@ -53,7 +53,7 @@ open class ShadowCollectionViewItem: UICollectionViewCell {
         backgroundView?.layer.addSublayer(shadowLayer)
         shadowLayer.cornerRadius = 4
         shadowLayer.masksToBounds = true
-        shadowLayer.opacity = 0.6
+        shadowLayer.opacity = 0.3
     }
 
     open override func layoutSubviews() {

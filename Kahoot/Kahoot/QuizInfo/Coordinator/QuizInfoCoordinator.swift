@@ -26,6 +26,7 @@ final class QuizInfoCoordinator: CoordinatorProtocol {
         let initialViewController = QuizInfoViewController(viewModel: viewModel,
                                                            theme: dependencyContainer.theme)
         navigationController?.hideNavigationBar()
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         navigationController?.pushViewController(initialViewController, animated: false)
     }
     
@@ -65,5 +66,9 @@ extension QuizInfoCoordinator: QuestionListViewModelCoordinating {
     /// Dismissed Controller
     func questionListViewModelDidFinishQuestion(_ questionListViewModel: QuestionListViewModel) {
         
+        showAlert(with: "Finish Quiz", message: "Go back and try another quiz.", closeActionTitle: "Ok", closeActionCompletion: {
+
+        }, otherActionTitle: nil)
+
     }
 }

@@ -22,6 +22,7 @@ class QuestionInfoViewItem: UIView {
         let questionImageView = UIImageView()
         questionImageView.clipsToBounds = true
         questionImageView.layer.cornerRadius = 4
+        questionImageView.contentMode = .scaleAspectFit
         questionImageView.translatesAutoresizingMaskIntoConstraints = false
         return questionImageView
     }()

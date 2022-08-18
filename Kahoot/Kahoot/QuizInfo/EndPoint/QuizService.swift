@@ -16,7 +16,7 @@ struct QuizService: QuizServiceProtocol {
 
         do {
             let result = try await apiService.request(QuizEndPoint.getQuizList(quizId: quizId))
-            return try await JSONDecodeableParser<QuizInfo>().parse(data: result.data)
+            return try await JSONDecodeAbleParser<QuizInfo>().parse(data: result.data)
         } catch {
            throw error
         }

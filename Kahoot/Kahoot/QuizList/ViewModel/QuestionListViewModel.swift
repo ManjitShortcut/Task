@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 protocol QuestionListViewModelCoordinating: AnyObject {
     
@@ -60,7 +61,6 @@ final class QuestionListViewModel {
             coordinator?.questionListViewModelDidFinishQuestion(self)
             return
         }
-        
         didSetQuestion()
     }
 
@@ -142,7 +142,14 @@ final class QuestionListViewModel {
     @objc private func calculateTimeOut() {
         
         remainingTime -= 1
+        
         if remainingTime >= 0 {
+            
+            if remainingTime < 5 {
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.warning)
+            }
+            
             delegate?.questionListViewModel(self, didUpdateTimeOut: remainingTime)
         } else {
             inValidateTimeOut()
@@ -163,6 +170,7 @@ final class QuestionListViewModel {
 extension QuestionListViewModel {
     
     func didSelectedOptionIndex(index: Int) {
+        
         for (indexPosition, choiceViewModel) in choiceListViewModel.enumerated() {
             if index == indexPosition {
                 choiceViewModel.didUserSelectOption = true
@@ -174,5 +182,9 @@ extension QuestionListViewModel {
         
         let selectedItem = choiceListViewModel[index]
         self.selectedChoice = selectedItem.choice
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.didCheckedAnswer()
+        }
     }
 }

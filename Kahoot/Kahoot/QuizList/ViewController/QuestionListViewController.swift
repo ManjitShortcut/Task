@@ -299,6 +299,8 @@ extension QuestionListViewController: QuestionListViewModelDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.continueButton.isHidden = false
             self.removeProgressView()
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.error)
         }
     }
     
@@ -320,6 +322,8 @@ extension QuestionListViewController: QuestionListViewModelDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.continueButton.isHidden = false
             self.removeProgressView()
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.success)
         }
     }
     

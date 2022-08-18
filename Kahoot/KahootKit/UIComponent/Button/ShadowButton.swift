@@ -1,7 +1,8 @@
 import UIKit
 
 class ShadowButton: UIButton {
-    
+    let shadowLayer = CALayer()
+
     var title: String = "" {
         didSet {
             setTitle()

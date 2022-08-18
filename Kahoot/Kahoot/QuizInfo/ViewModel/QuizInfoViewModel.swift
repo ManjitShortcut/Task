@@ -26,7 +26,8 @@ class QuizInfoViewModel {
     private var apiService: QuizService
     
     private let quizInfoId: String
-    
+    private var loadingTask: Task<Void, Never>?
+
     // MARK: - Life Cycle
     
     init(coordinator: QuizInfoViewModelCoordinating?,
@@ -37,24 +38,29 @@ class QuizInfoViewModel {
         self.apiService = apiService
     }
     
+    deinit {
+        loadingTask?.cancel()
+    }
+    
     // MARK: - Public Methods
 
     func didFetchQuiz() {
         delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .progress)
-        Task {
-            do {
-                let quizInfo = try await apiService.fetchQuizList(forQuizId: quizInfoId)
-                DispatchQueue.main.async {
-                    self.delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .success)
-                    self.coordinator?.quizInfoViewModel(self, didNavigateToQuiz: quizInfo)
+        
+        loadingTask = Task {
+                do {
+                    let quizInfo = try await apiService.fetchQuizList(forQuizId: quizInfoId)
+                    DispatchQueue.main.async {
+                        self.delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .success)
+                        self.coordinator?.quizInfoViewModel(self, didNavigateToQuiz: quizInfo)
+                    }
+                } catch {
+                    
+                    DispatchQueue.main.async {
+                        self.delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .fail(error: error))
+                        self.coordinator?.quizInfoViewModel(self, didFailedToFetchQuizInfo: error)
+                    }
                 }
-            } catch {
-                
-                DispatchQueue.main.async {
-                    self.delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .fail(error: error))
-                    self.coordinator?.quizInfoViewModel(self, didFailedToFetchQuizInfo: error)
-                }
-            }
         }
     }
 }
