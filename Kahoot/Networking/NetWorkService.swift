@@ -8,13 +8,13 @@ public enum NetworkError: String, Error {
     case unableCreateRequest = "missingRequest"
 }
 
-public protocol NetworkService {
+public protocol NetworkServiceProtocol {
     func request(_ route: EndPointType,
                  completion: @escaping NetworkCompletion)
     func cancel()
 }
 
-class Network: NSObject, URLSessionDelegate {
+class NetworkService: NSObject, URLSessionDelegate {
     
     private var task: URLSessionTask?
     private let session: URLSession
@@ -39,6 +39,10 @@ class Network: NSObject, URLSessionDelegate {
         task?.resume()
     }
     
+ //TODO: Add other request form
+    /// Add Request body
+    /// Url encoding
+        
     private func buildRequest(from route: EndPointType) throws -> URLRequest {
         
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
@@ -50,15 +54,10 @@ class Network: NSObject, URLSessionDelegate {
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         }
         return request
-        //        do {
-        //
-        //        } catch {
-        //            throw NetworkError.unableCreateRequest
-        //        }
     }
 }
 
-extension Network: NetworkService {
+extension NetworkService: NetworkServiceProtocol {
     
     func request(_ route: EndPointType,
                  completion: @escaping NetworkCompletion) {

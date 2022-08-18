@@ -15,8 +15,9 @@ extension UIDevice {
         }
     }
     
+    /// check for is device is iPad or Not
+    ///
     var isIPad: Bool {
-        
         switch UIDevice.current.userInterfaceIdiom {
         case .pad:
             return true

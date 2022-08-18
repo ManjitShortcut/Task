@@ -20,12 +20,11 @@ In order to run this app in your simulator, perform the following steps:
 
 
 ## Project Structure Info
-* AppConfiguration file where base-end point Url, ApiKey.
+* AppConfiguration file where base-end point Url.
 * No Storyboard and no Xib file
 
 ## Project Traget
 * Kahoot is used for app store
-* Kahoot_Test is used for Development/Testing
 
 ## Project Structure
 * Networking : Only Dependancy new-work  in this folder
@@ -34,18 +33,31 @@ In order to run this app in your simulator, perform the following steps:
   
 ## New Feature
  If a new feature is added then follow this folder structere
-Ex- Quiz
- Then folder structure will be quiz is the parent strucure and 
+ Ex- Quiz
+ Then folder structure will be 
  
-* Quiz
-  
-
-
+* Quiz As parent folder 
+* ViewController
+* ViewModel
+* Api
+* Coordinator
+* Model
 
 ### Reusable Class
 * Shadow Button: Which is responsible for all default shadow button
+* Lable: It the subclass of UILable.
+* ShadowCollectionViewItem: It is parent class for Choice view cell. Shadow already added here. 
+  If you modified the shadow then respective child class will affected.
 
-* Shadow Button: 
+## File Structure
+* Property: All public property in a class at the top follow by private property, then all ui element
+* All public method should be on the top with group by #pargma mark Public method then by private methods group by #pargma mark private method
 
-### NB:
-Follow docC for documentation 
+ 
+
+
+
+
+
+ 
+

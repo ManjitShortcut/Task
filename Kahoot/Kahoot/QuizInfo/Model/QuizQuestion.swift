@@ -28,7 +28,6 @@ extension QuizQuestion {
         }
     }
     
-    
     var formattedQuestion: String {
         return self.question.formattedHtml()
     }

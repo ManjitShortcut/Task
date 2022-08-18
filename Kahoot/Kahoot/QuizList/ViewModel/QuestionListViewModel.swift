@@ -16,7 +16,7 @@ protocol QuestionListViewModelDelegate: AnyObject {
     func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
                                didUpdateTimeOut value: Int)
     func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
-                               didUpdateContinueButtonTitle title:String)
+                               didUpdateContinueButtonTitle title: String)
 }
 
 final class QuestionListViewModel {

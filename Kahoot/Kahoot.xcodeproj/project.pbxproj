@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A0779B428AC5BBD00CC4BA5 /* QuestionListViewController+CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0779B328AC5BBD00CC4BA5 /* QuestionListViewController+CollectionViewExtension.swift */; };
+		1A2B1F3328AE910D007E35E6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1A2B1F3228AE910D007E35E6 /* Kingfisher */; };
 		1A37405928A9ADFC00EA87A3 /* QuizTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37405828A9ADFC00EA87A3 /* QuizTypeView.swift */; };
 		1A37405B28A9B1DC00EA87A3 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37405A28A9B1DC00EA87A3 /* Label.swift */; };
 		1A37406128A9B6A600EA87A3 /* QuestionInfoViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37406028A9B6A600EA87A3 /* QuestionInfoViewItem.swift */; };
@@ -35,7 +36,6 @@
 		1A501BC928A73035009EC0B1 /* HTPPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A501BC828A73035009EC0B1 /* HTPPHeaders.swift */; };
 		1A8AECE128ABCCCB00987888 /* AnswerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AECE028ABCCCB00987888 /* AnswerResultView.swift */; };
 		1A8AED2328AC059800987888 /* AppMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AED2228AC059800987888 /* AppMargin.swift */; };
-		1A8AED2628AC141100987888 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1A8AED2528AC141100987888 /* Kingfisher */; };
 		1A8AED2828AC23C800987888 /* ChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AED2728AC23C800987888 /* ChoiceViewModel.swift */; };
 		1A8AED3028AC4A8900987888 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A8AED2F28AC491F00987888 /* Montserrat-Regular.ttf */; };
 		1A96F54A28A7A98200C79C17 /* QuizInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A96F54928A7A98200C79C17 /* QuizInfoCoordinator.swift */; };
@@ -146,8 +146,6 @@
 		1A96F59428A95F4400C79C17 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1A9E34C528AD592C009A0154 /* Device+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Extension.swift"; sourceTree = "<group>"; };
 		1A9E34C828AD6AE4009A0154 /* AlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertProtocol.swift; sourceTree = "<group>"; };
-		1AAE20E128AE335E006D2A0A /* Kahoot_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kahoot_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AAE20E228AE335F006D2A0A /* Kahoot copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Kahoot copy-Info.plist"; path = "/Users/manjit/Desktop/Task/Task/Kahoot/Kahoot copy-Info.plist"; sourceTree = "<absolute>"; };
 		1AAE20E328AE3401006D2A0A /* QuestionListViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewModelTestCase.swift; sourceTree = "<group>"; };
 		1AAE210B28AE5AD8006D2A0A /* QuestionListUITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionListUITestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A8AED2628AC141100987888 /* Kingfisher in Frameworks */,
+				1A2B1F3328AE910D007E35E6 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,14 +170,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AAE20D528AE335E006D2A0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AAE20D628AE335E006D2A0A /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +221,6 @@
 				1A501B8028A7099D009EC0B1 /* KahootTests */,
 				1A501B8A28A7099D009EC0B1 /* KahootUITests */,
 				1A501B6828A7099B009EC0B1 /* Products */,
-				1AAE20E228AE335F006D2A0A /* Kahoot copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,7 +230,6 @@
 				1A501B6728A7099B009EC0B1 /* Kahoot.app */,
 				1A501B7D28A7099D009EC0B1 /* KahootTests.xctest */,
 				1A501B8728A7099D009EC0B1 /* KahootUITests.xctest */,
-				1AAE20E128AE335E006D2A0A /* Kahoot_Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -556,7 +544,7 @@
 				1A46122328A9942400193A29 /* swift_Gen */,
 				1A501B6428A7099B009EC0B1 /* Frameworks */,
 				1A501B6528A7099B009EC0B1 /* Resources */,
-				1A501B9A28A71108009EC0B1 /* swift_lint */,
+				1A2B1F3428AE931F007E35E6 /* swift_Lint */,
 			);
 			buildRules = (
 			);
@@ -564,7 +552,7 @@
 			);
 			name = Kahoot;
 			packageProductDependencies = (
-				1A8AED2528AC141100987888 /* Kingfisher */,
+				1A2B1F3228AE910D007E35E6 /* Kingfisher */,
 			);
 			productName = Kahoot;
 			productReference = 1A501B6728A7099B009EC0B1 /* Kahoot.app */;
@@ -606,28 +594,6 @@
 			productReference = 1A501B8728A7099D009EC0B1 /* KahootUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		1AAE209F28AE335E006D2A0A /* Kahoot_Test */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1AAE20DE28AE335E006D2A0A /* Build configuration list for PBXNativeTarget "Kahoot_Test" */;
-			buildPhases = (
-				1AAE20A228AE335E006D2A0A /* Sources */,
-				1AAE20D428AE335E006D2A0A /* swift_Gen */,
-				1AAE20D528AE335E006D2A0A /* Frameworks */,
-				1AAE20D728AE335E006D2A0A /* Resources */,
-				1AAE20DD28AE335E006D2A0A /* swift_lint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Kahoot_Test;
-			packageProductDependencies = (
-				1AAE20A028AE335E006D2A0A /* Kingfisher */,
-			);
-			productName = Kahoot;
-			productReference = 1AAE20E128AE335E006D2A0A /* Kahoot_Test.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -661,7 +627,7 @@
 			);
 			mainGroup = 1A501B5E28A7099B009EC0B1;
 			packageReferences = (
-				1A8AED2428AC141100987888 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1A2B1F3128AE910D007E35E6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 1A501B6828A7099B009EC0B1 /* Products */;
 			projectDirPath = "";
@@ -670,7 +636,6 @@
 				1A501B6628A7099B009EC0B1 /* Kahoot */,
 				1A501B7C28A7099D009EC0B1 /* KahootTests */,
 				1A501B8628A7099D009EC0B1 /* KahootUITests */,
-				1AAE209F28AE335E006D2A0A /* Kahoot_Test */,
 			);
 		};
 /* End PBXProject section */
@@ -702,21 +667,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AAE20D728AE335E006D2A0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AAE20D828AE335E006D2A0A /* LaunchScreen.storyboard in Resources */,
-				1AAE20D928AE335E006D2A0A /* AppIcon.xcassets in Resources */,
-				1AAE20DA28AE335E006D2A0A /* Colors.xcassets in Resources */,
-				1AAE20DB28AE335E006D2A0A /* Montserrat-Regular.ttf in Resources */,
-				1AAE20DC28AE335E006D2A0A /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1A2B1F3428AE931F007E35E6 /* swift_Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swift_Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ./scripts/swift_lint.sh --build\n";
+		};
 		1A46122328A9942400193A29 /* swift_Gen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -734,60 +705,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./scripts/swiftgen.sh\n";
-		};
-		1A501B9A28A71108009EC0B1 /* swift_lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = swift_lint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh ./scripts/swift_lint.sh --build\n";
-		};
-		1AAE20D428AE335E006D2A0A /* swift_Gen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = swift_Gen;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./scripts/swiftgen.sh\n";
-		};
-		1AAE20DD28AE335E006D2A0A /* swift_lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = swift_lint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh ./scripts/swift_lint.sh --build\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -852,7 +769,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAE20E528AE39D1006D2A0A /* QuestionListViewModelTestCase.swift in Sources */,
 				1A501B8228A7099D009EC0B1 /* KahootTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,65 +777,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAE210C28AE5AD8006D2A0A /* QuestionListUITestCase.swift in Sources */,
 				1A501B8C28A7099D009EC0B1 /* KahootUITests.swift in Sources */,
 				1A501B8E28A7099D009EC0B1 /* KahootUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AAE20A228AE335E006D2A0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AAE20A328AE335E006D2A0A /* AnswerResultView.swift in Sources */,
-				1AAE20A428AE335E006D2A0A /* AppConfiguration.swift in Sources */,
-				1AAE20A528AE335E006D2A0A /* AppDelegate.swift in Sources */,
-				1AAE20A628AE335E006D2A0A /* AppInitializerCoordinator.swift in Sources */,
-				1AAE20A728AE335E006D2A0A /* AppInitializerViewController.swift in Sources */,
-				1AAE20A828AE335E006D2A0A /* AppInitializerViewModel.swift in Sources */,
-				1AAE20A928AE335E006D2A0A /* BaseViewController.swift in Sources */,
-				1AAE20AA28AE335E006D2A0A /* ShadowButton.swift in Sources */,
-				1AAE20AB28AE335E006D2A0A /* Choice.swift in Sources */,
-				1AAE20AC28AE335E006D2A0A /* AppMargin.swift in Sources */,
-				1AAE20AD28AE335E006D2A0A /* CollectionView+Extension.swift in Sources */,
-				1AAE20AE28AE335E006D2A0A /* Coordinator.swift in Sources */,
-				1AAE20AF28AE335E006D2A0A /* DependacyContainer.swift in Sources */,
-				1AAE20B028AE335E006D2A0A /* EndPointType.swift in Sources */,
-				1AAE20B128AE335E006D2A0A /* Font+Extension.swift in Sources */,
-				1AAE20B228AE335E006D2A0A /* HTPPHeaders.swift in Sources */,
-				1AAE20B328AE335E006D2A0A /* QuestionListViewController+CollectionViewExtension.swift in Sources */,
-				1AAE20B428AE335E006D2A0A /* HTTPTask.swift in Sources */,
-				1AAE20B528AE335E006D2A0A /* Label.swift in Sources */,
-				1AAE20B628AE335E006D2A0A /* LanguageInfo.swift in Sources */,
-				1AAE20B728AE335E006D2A0A /* LayoutConstraint.swift in Sources */,
-				1AAE20B828AE335E006D2A0A /* Device+Extension.swift in Sources */,
-				1AAE20B928AE335E006D2A0A /* LoadingView.swift in Sources */,
-				1AAE20BA28AE335E006D2A0A /* NavigationController+Extension.swift in Sources */,
-				1AAE20BB28AE335E006D2A0A /* NetWorkService.swift in Sources */,
-				1AAE20BC28AE335E006D2A0A /* Parser.swift in Sources */,
-				1AAE20BD28AE335E006D2A0A /* ProgressBarView.swift in Sources */,
-				1AAE20BE28AE335E006D2A0A /* ChoiceViewItem.swift in Sources */,
-				1AAE20BF28AE335E006D2A0A /* QuestionInfoViewItem.swift in Sources */,
-				1AAE20C028AE335E006D2A0A /* QuestionListViewController.swift in Sources */,
-				1AAE20C128AE335E006D2A0A /* QuestionListViewModel.swift in Sources */,
-				1AAE20C228AE335E006D2A0A /* QuizCountView.swift in Sources */,
-				1AAE20C328AE335E006D2A0A /* QuizEndPoint.swift in Sources */,
-				1AAE20C428AE335E006D2A0A /* AlertProtocol.swift in Sources */,
-				1AAE20C528AE335E006D2A0A /* QuizTypeView.swift in Sources */,
-				1AAE20C628AE335E006D2A0A /* QuizInfo.swift in Sources */,
-				1AAE20C728AE335E006D2A0A /* QuizInfoCoordinator.swift in Sources */,
-				1AAE20C828AE335E006D2A0A /* QuizInfoViewController.swift in Sources */,
-				1AAE20C928AE335E006D2A0A /* QuizInfoViewModel.swift in Sources */,
-				1AAE20CA28AE335E006D2A0A /* QuizQuestion.swift in Sources */,
-				1AAE20CB28AE335E006D2A0A /* QuizService.swift in Sources */,
-				1AAE20CC28AE335E006D2A0A /* SceneDelegate.swift in Sources */,
-				1AAE20CD28AE335E006D2A0A /* Theme.swift in Sources */,
-				1AAE20CE28AE335E006D2A0A /* UIImage+Extension.swift in Sources */,
-				1AAE20CF28AE335E006D2A0A /* UIViewShadow+Extension.swift in Sources */,
-				1AAE20D028AE335E006D2A0A /* ViewController+Extension.swift in Sources */,
-				1AAE20D128AE335E006D2A0A /* ChoiceViewModel.swift in Sources */,
-				1AAE20D228AE335E006D2A0A /* XCAssets+Generated.swift in Sources */,
-				1AAE20D328AE335E006D2A0A /* XCColors+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1199,65 +1058,6 @@
 			};
 			name = Release;
 		};
-		1AAE20DF28AE335E006D2A0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q95X895A6A;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Kahoot copy-Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Kahoot.Kahoot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1AAE20E028AE335E006D2A0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q95X895A6A;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Kahoot copy-Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Kahoot.Kahoot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1297,19 +1097,10 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AAE20DE28AE335E006D2A0A /* Build configuration list for PBXNativeTarget "Kahoot_Test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1AAE20DF28AE335E006D2A0A /* Debug */,
-				1AAE20E028AE335E006D2A0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1A8AED2428AC141100987888 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		1A2B1F3128AE910D007E35E6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -1317,26 +1108,12 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		1AAE20A128AE335E006D2A0A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
-
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1A8AED2528AC141100987888 /* Kingfisher */ = {
+		1A2B1F3228AE910D007E35E6 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1A8AED2428AC141100987888 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		1AAE20A028AE335E006D2A0A /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1AAE20A128AE335E006D2A0A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 1A2B1F3128AE910D007E35E6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

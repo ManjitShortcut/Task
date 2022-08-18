@@ -54,11 +54,11 @@ extension QuizInfoCoordinator: QuizInfoViewModelCoordinating {
     
     func quizInfoViewModel(_ quizInfoViewModel: QuizInfoViewModel,
                            didFailedToFetchQuizInfo error: Error?) {
-        showAlert(with: "Error!",
-                  message: "Something went wrong.Please try again.",
-                  closeActionTitle: "Try Again") {
+        showAlert(with: "Error!", message: "Something went wrong.Please try again.", closeActionTitle: "Try Again", closeActionCompletion: {
             quizInfoViewModel.didFetchQuiz()
-        }
+
+        }, otherActionTitle: nil)
+        
     }
 }
 
