@@ -41,9 +41,10 @@ extension QuestionListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
+         let group = viewModel.choiceListViewModel.count / 2
         
         return CGSize(width: (collectionView.frame.size.width - (UIDevice.current.isIPad ? 16.0 : 8.0)) / 2,
-                      height: (collectionView.frame.size.height - (UIDevice.current.isIPad ? 16.0 : 8.0)) / 2)
+                      height: (collectionView.frame.size.height - (UIDevice.current.isIPad ? 16.0 : 8.0)) / CGFloat(group))
     }
 }
 

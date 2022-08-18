@@ -32,9 +32,9 @@ extension UICollectionView {
     }
 }
     
-    
-/// All our items must inherit from this cell.
-open class CollectionViewItem: UICollectionViewCell {
+/// All choice must inherit from this cell.
+open class ShadowCollectionViewItem: UICollectionViewCell {
+    let shadowLayer = CALayer()
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,9 +49,16 @@ open class CollectionViewItem: UICollectionViewCell {
     internal func commonInit() {
         clipsToBounds = false
         backgroundView = UIView()
-        backgroundView?.layer.masksToBounds = false
-        backgroundView?.layer.borderColor = UIColor.clear.cgColor
         contentView.layer.cornerRadius = 4
         contentView.clipsToBounds = true
+        backgroundView?.layer.addSublayer(shadowLayer)
+        shadowLayer.cornerRadius = 4
+        shadowLayer.masksToBounds = true
+        shadowLayer.opacity = 0.6
+    }
+
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        shadowLayer.frame = CGRect(x: 0, y: frame.size.height - 20, width: contentView.frame.size.width, height: 25)
     }
 }

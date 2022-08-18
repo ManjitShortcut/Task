@@ -13,7 +13,7 @@ In order to run this app in your simulator, perform the following steps:
 * Click build/run.
 
 ### Libraries or Packages used
-* 'KeychainSwift', '~> 19.0' (Storing data device key chain)
+* 'Kingfisher', '~> 7.0.0' (For downloading image)
 
 ### Design Pattern
 * 'MVVM' + 'COORDINATOR'
@@ -25,5 +25,7 @@ In order to run this app in your simulator, perform the following steps:
 
 ## Project Traget
 * Kahoot is used for app store
-* Kahoot_test is used for Development/Testing
+* Kahoot_Test is used for Development/Testing
 
+### NB:
+Follow docC for documentation 

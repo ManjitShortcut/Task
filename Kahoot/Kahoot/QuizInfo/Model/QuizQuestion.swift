@@ -24,26 +24,32 @@ extension QuizQuestion {
         if layout == "TRUE_FALSE" {
             return .trueFalse
         } else {
-            return .singleChoice
+            return .other
         }
     }
     
+    
     var formattedQuestion: String {
-        let formattedQuestion = self.question.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: .none)
-        
-        return formattedQuestion
+        return self.question.formattedHtml()
+    }
+}
+
+extension String {
+    func formattedHtml() -> String {
+        let new = self.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: .none)
+        return new
     }
 }
 
 enum QuestionLayout {
     case trueFalse
-    case singleChoice
+    case other
      
     var layOutText: String {
         switch self {
         case .trueFalse:
             return "True/False"
-        case .singleChoice:
+        case .other:
             return "Quiz"
         }
     }

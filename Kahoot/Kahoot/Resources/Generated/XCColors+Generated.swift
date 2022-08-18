@@ -29,6 +29,7 @@ public enum Color {
   public static let pink = ColorAsset(name: "pink")
   public static let radicalRed = ColorAsset(name: "radicalRed")
   public static let red = ColorAsset(name: "red")
+  public static let textShadow = ColorAsset(name: "textShadow")
   public static let white = ColorAsset(name: "white")
   public static let yellow = ColorAsset(name: "yellow")
 }

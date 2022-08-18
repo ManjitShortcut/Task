@@ -1,10 +1,11 @@
 import Foundation
 import UIKit
 
-class ChoiceViewItem: CollectionViewItem {
-    
-    var choiceResultConstraint: NSLayoutConstraint?
-    
+class ChoiceViewItem: ShadowCollectionViewItem {
+
+    var choiceStatusLeadingConstraint: NSLayoutConstraint?
+    var choiceStatusTrailingConstraint: NSLayoutConstraint?
+
     let shapeImageView: UIImageView = {
         let shapeImageView = UIImageView()
         shapeImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -21,7 +22,7 @@ class ChoiceViewItem: CollectionViewItem {
         let choiceInfoLabel = Label(style: .Mont16)
         choiceInfoLabel.textAlignment = .center
         choiceInfoLabel.textColor = .white
-        choiceInfoLabel.textDropShadow()
+        choiceInfoLabel.textDropShadow(shadowColor: Color.textShadow.color)
         choiceInfoLabel.translatesAutoresizingMaskIntoConstraints = false
         return choiceInfoLabel
     }()
@@ -49,9 +50,12 @@ class ChoiceViewItem: CollectionViewItem {
             choiceInfoLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             choiceInfoLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
             choiceInfoLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-
-            shapeImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-            shapeImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8)
+            shapeImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
+            shapeImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            
+            choiceResultIconImageView.heightAnchor.constraint(equalToConstant: 32),
+            choiceResultIconImageView.widthAnchor.constraint(equalToConstant: 32),
+            choiceResultIconImageView.leadingAnchor.constraint(equalTo: leadingAnchor)
         ])
     }
     
@@ -63,35 +67,31 @@ class ChoiceViewItem: CollectionViewItem {
         choiceResultIconImageView.isHidden = true
         isUserInteractionEnabled = true
         contentView.alpha = 1
+        shadowLayer.opacity = 0.6
 
         switch viewModel.state {
         case .timeOut:
             isUserInteractionEnabled = false
             contentView.backgroundColor = viewModel.getChoiceStatusBackgroundColor()
+            shadowLayer.backgroundColor = contentView.backgroundColor?.cgColor
             choiceResultIconImageView.isHidden = false
             choiceResultIconImageView.image = viewModel.getChoiceStatusIcon()
             isUserInteractionEnabled = false
-            choiceResultIconImageView.translatesAutoresizingMaskIntoConstraints = false
-            
-            switch viewModel.getChoicePositionDirection() {
-            case .left:
-                NSLayoutConstraint.activate([
-                    choiceResultIconImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                    choiceResultIconImageView.heightAnchor.constraint(equalToConstant: 32),
-                    choiceResultIconImageView.widthAnchor.constraint(equalToConstant: 32)])
 
-            case .right:
-                NSLayoutConstraint.activate([
-                    choiceResultIconImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-                    choiceResultIconImageView.heightAnchor.constraint(equalToConstant: 32),
-                    choiceResultIconImageView.widthAnchor.constraint(equalToConstant: 32)])
-            }
+//            switch viewModel.getChoicePositionDirection() {
+//            case .left:
+//                NSLayoutConstraint.activate([
+//                    choiceResultIconImageView.leadingAnchor.constraint(equalTo: leadingAnchor)])
+//
+//            case .right:
+//            }
                 
         case .normal:
             shapeImageView.isHidden = false
             isUserInteractionEnabled = true
             shapeImageView.image = viewModel.getImageShapeForPosition()
             contentView.backgroundColor = viewModel.getBackgroundColorForPosition()
+            shadowLayer.backgroundColor = contentView.backgroundColor?.cgColor
         case .selectChoice:
             isUserInteractionEnabled = false
             shapeImageView.isHidden = false
@@ -100,6 +100,7 @@ class ChoiceViewItem: CollectionViewItem {
                 contentView.backgroundColor = viewModel.getBackgroundColorForPosition()
             } else {
                 contentView.alpha = 0.3
+                shadowLayer.opacity = 0.1
             }
         }
     }
