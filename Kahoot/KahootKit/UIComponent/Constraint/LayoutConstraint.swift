@@ -21,8 +21,3 @@ public extension NSLayoutConstraint {
         return self
     }
 }
-
-extension CGFloat {
-    
-}
-

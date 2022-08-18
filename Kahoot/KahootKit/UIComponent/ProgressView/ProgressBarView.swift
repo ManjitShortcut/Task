@@ -96,10 +96,16 @@ open class ProgressBarView: UIView {
         progressViewLayer.frame = progressRect
         if UIDevice.current.isIPad {
             progressValueLabel.style = .Mont20
-            progressValueLabel.frame = CGRect(x: rect.width - 40 , y: (rect.height - 24)/2, width: 40, height: 24)
+            progressValueLabel.frame = CGRect(x: rect.width - 40,
+                                              y: (rect.height - 24)/2,
+                                              width: 40,
+                                              height: 24)
         } else {
             progressValueLabel.style = .Mont12
-            progressValueLabel.frame = CGRect(x: rect.width - 20 , y: (rect.height - 14)/2, width: 20, height: 14)
+            progressValueLabel.frame = CGRect(x: rect.width - 20,
+                                              y: (rect.height - 14)/2,
+                                              width: 20,
+                                              height: 14)
         }
     }
 

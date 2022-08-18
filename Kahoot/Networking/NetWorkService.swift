@@ -14,7 +14,7 @@ public protocol NetworkServiceProtocol {
     func cancel()
 }
 
-class NetworkService: NSObject, URLSessionDelegate {
+class NetworkService: NSObject {
     
     private var task: URLSessionTask?
     private let session: URLSession
@@ -39,7 +39,7 @@ class NetworkService: NSObject, URLSessionDelegate {
         task?.resume()
     }
     
- //TODO: Add other request form
+  // TODO: Add other request form
     /// Add Request body
     /// Url encoding
         

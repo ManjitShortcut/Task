@@ -16,7 +16,7 @@ public enum ChoiceStatus {
 class AnswerResultView: UIView {
 
     var choiceStatus = ChoiceStatus.wrong {
-        didSet{
+        didSet {
             didSetChoiceStatus(status: choiceStatus)
             didSetColor()
         }
