@@ -41,7 +41,7 @@ class QuizInfoViewModel {
 
     func didFetchQuiz() {
         delegate?.quizInfoViewModel(self, didFetchingQuizLoadingState: .progress)
-        apiService.fetchQuizList(forQuizId: "fb4054fc-6a71-463e-88cd-243876715bc1") { [weak self] result in
+        apiService.fetchQuizList(forQuizId: quizInfoId ) { [weak self] result in
             guard let self = self else {
                 return
             }

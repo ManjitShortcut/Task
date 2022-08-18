@@ -27,3 +27,5 @@ In order to run this app in your simulator, perform the following steps:
 * Kahoot is used for app store
 * Kahoot_Test is used for Development/Testing
 
+### NB:
+Follow docC for documentation 

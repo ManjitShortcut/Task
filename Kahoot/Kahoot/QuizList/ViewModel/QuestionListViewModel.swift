@@ -8,14 +8,15 @@ protocol QuestionListViewModelCoordinating: AnyObject {
 protocol QuestionListViewModelDelegate: AnyObject {
 
     func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
-                               didSelectedQuestion question: QuizQuestion,
+                               didSelectQuestion question: QuizQuestion,
                                questionNumber: String)
     func questionListViewModelDidSelectWrongAnswer(_ questionListViewModel: QuestionListViewModel)
     func questionListViewModelDidSelectCorrectAnswer(_ questionListViewModel: QuestionListViewModel)
     func questionListViewModelDidFailToGetOptions(_ questionListViewModel: QuestionListViewModel)
     func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
                                didUpdateTimeOut value: Int)
-
+    func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
+                               didUpdateContinueButtonTitle title:String)
 }
 
 final class QuestionListViewModel {
@@ -23,20 +24,20 @@ final class QuestionListViewModel {
     weak var delegate: QuestionListViewModelDelegate?
     lazy var choiceListViewModel = [ChoiceViewModel]()
 
-    private weak var coordinator: QuestionListViewModelCoordinating?
-    private var quizInfo: QuizInfo
-    
-    private var selectedQuizQuestion: QuizQuestion? {
+    var selectedQuizQuestion: QuizQuestion? {
         didSet {
             didSelectQuestion()
         }
     }
     
-    private var selectedChoice: Choice? {
+    var selectedChoice: Choice? {
         didSet {
             
         }
     }
+    
+    private weak var coordinator: QuestionListViewModelCoordinating?
+    private var quizInfo: QuizInfo
     
     private var remainingTime = 0
     private var selectedQuestionIndex = 0
@@ -96,6 +97,10 @@ final class QuestionListViewModel {
             coordinator?.questionListViewModelDidFinishQuestion(self)
             return
         }
+        
+        if selectedQuestionIndex == questionList.count - 1 {
+            delegate?.questionListViewModel(self, didUpdateContinueButtonTitle: "Finish")
+        }
         selectedQuizQuestion = quizInfo.questions?[selectedQuestionIndex]
     }
     
@@ -114,7 +119,7 @@ final class QuestionListViewModel {
         createOptionViewModel(for: choices)
         remainingTime = question.timeOut
         let questionCount = "\(selectedQuestionIndex + 1)/\(questionList.count)"
-        delegate?.questionListViewModel(self, didSelectedQuestion: question, questionNumber: questionCount)
+        delegate?.questionListViewModel(self, didSelectQuestion: question, questionNumber: questionCount)
         validateTimeOut()
     }
     

@@ -2,7 +2,7 @@ import UIKit
 
 class QuestionListViewController: BaseViewController {
     let viewModel: QuestionListViewModel
-    let theme: ThemeProtocol
+    let theme: ThemeProtocol?
     
     var dataSource: UICollectionViewDiffableDataSource<Section, ChoiceViewModel>?
 
@@ -31,12 +31,14 @@ class QuestionListViewController: BaseViewController {
 
     private let quizTypeView: QuizTypeView = {
         let quizTypeView = QuizTypeView()
+        quizTypeView.accessibilityIdentifier = "quizTypeView"
         quizTypeView.translatesAutoresizingMaskIntoConstraints = false
         return quizTypeView
     }()
     
     private let quizCountView: QuizCountView = {
         let quizCountView = QuizCountView()
+        quizCountView.accessibilityIdentifier = "quizCountView"
         quizCountView.translatesAutoresizingMaskIntoConstraints = false
         return quizCountView
     }()
@@ -50,11 +52,12 @@ class QuestionListViewController: BaseViewController {
         return questionInfoView
     }()
     
-    private lazy var continueButton: Button = {
-        let continueButton = Button()
+    private lazy var continueButton: ShadowButton = {
+        let continueButton = ShadowButton()
         continueButton.theme = theme
         continueButton.title = "Continue"
         continueButton.isHidden = true
+        continueButton.accessibilityIdentifier = "Contine_Button"
         continueButton.translatesAutoresizingMaskIntoConstraints = false
         continueButton.addTarget(self, action: #selector(didTappedContinueButton(_:)), for: .touchUpInside)
         return continueButton
@@ -62,7 +65,7 @@ class QuestionListViewController: BaseViewController {
 
     // MARK: - Life Cycle
     
-    init(viewModel: QuestionListViewModel, theme: ThemeProtocol) {
+    init(viewModel: QuestionListViewModel, theme: ThemeProtocol?) {
         self.viewModel =  viewModel
         self.theme = theme
         super.init(nibName: nil, bundle: nil)
@@ -156,9 +159,9 @@ class QuestionListViewController: BaseViewController {
         self.view.addSubview(progressBar)
         progressBar.isHidden = false
         progressBar.delegate = self
-        progressBar.borderColor = theme.fuchsiaBlue20
-        progressBar.fillColor = theme.fuchsiaBlue
-        progressBar.textColor = theme.white
+        progressBar.borderColor = theme?.fuchsiaBlue20 ?? .blue
+        progressBar.fillColor = theme?.fuchsiaBlue ?? .blue
+        progressBar.textColor = theme?.white ?? .white
 
         progressBar.translatesAutoresizingMaskIntoConstraints = false
         let margins = view.layoutMarginsGuide
@@ -236,7 +239,9 @@ class QuestionListViewController: BaseViewController {
         }
     }
     
-    /// Voice over announcement
+    /// Voice over announcement:
+    /// - Announce voice over when selected option wrong or correct
+    /// - Announce voice over when time out
     private func postVoiceOverAnnouncement(_ announcement: String = "") {
         if UIAccessibility.isVoiceOverRunning {
             UIAccessibility.post(notification: .announcement, argument: announcement)
@@ -254,6 +259,15 @@ class QuestionListViewController: BaseViewController {
 
 extension QuestionListViewController: QuestionListViewModelDelegate {
     
+    /// Update button Title
+    ///
+    /// Update button title based on based on question index
+    /// - If question is last the the button title should be Finish
+    /// - Other wise continue
+    func questionListViewModel(_ questionListViewModel: QuestionListViewModel, didUpdateContinueButtonTitle title: String) {
+        continueButton.title = title
+    }
+
     /// Update  time out
     func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
                                didUpdateTimeOut value: Int) {
@@ -316,7 +330,7 @@ extension QuestionListViewController: QuestionListViewModelDelegate {
     }
     
     func questionListViewModel(_ questionListViewModel: QuestionListViewModel,
-                               didSelectedQuestion question: QuizQuestion,
+                               didSelectQuestion question: QuizQuestion,
                                questionNumber: String) {
         quizCountView.title = questionNumber
         updateQuestion(question: question)

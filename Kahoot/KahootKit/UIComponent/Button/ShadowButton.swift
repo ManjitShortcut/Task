@@ -1,6 +1,6 @@
 import UIKit
 
-class Button: UIButton {
+class ShadowButton: UIButton {
     
     var title: String = "" {
         didSet {
@@ -25,6 +25,8 @@ class Button: UIButton {
         }
     }
     
+    // MARK: - Life Cycle
+
     init(style: Style = .filled,
          shape: Shape = .squareRadius(radius: 4)) {
         super.init(frame: CGRect.zero)
@@ -38,6 +40,8 @@ class Button: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Private methods
+
     private func updateTheme() {
         updateStyle()
     }
@@ -70,7 +74,7 @@ class Button: UIButton {
     }
 }
 
-extension Button {
+extension ShadowButton {
     
     public enum Style {
         case filled

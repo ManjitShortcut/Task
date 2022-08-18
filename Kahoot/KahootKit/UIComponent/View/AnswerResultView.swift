@@ -32,7 +32,7 @@ class AnswerResultView: UIView {
         let titleLabel = Label(style: .Mont20)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.textAlignment = .center
-        titleLabel.textDropShadow()
+        titleLabel.textDropShadow(shadowColor: Color.textShadow.color)
         return titleLabel
     }()
     

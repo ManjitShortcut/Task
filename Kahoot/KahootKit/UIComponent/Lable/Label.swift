@@ -16,6 +16,8 @@ class Label: UILabel {
         didSet { setFontStyle(style: style) }
     }
     
+    // MARK: - Life Cycle
+
     public init(style: Style,
                 textStyle: UIFont.TextStyle = .body) {
         self.style = style
@@ -31,14 +33,14 @@ class Label: UILabel {
         setup()
     }
     
+    // MARK: - Private methods
+
     private func setup() {
         // Set up accessibility stuff here?
-        
         adjustsFontForContentSizeCategory = true
         numberOfLines = 0
         setFontStyle(style: style)
     }
-    
     
     private func setFontStyle(style: Style) {
         font = style.font(textStyle: textStyle,
@@ -101,11 +103,10 @@ extension Label {
 
 
 extension Label {
-    
-    func textDropShadow() {
+    func textDropShadow(shadowColor: UIColor) {
         layer.masksToBounds = false
         layer.shadowOpacity = 0.35
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 4, height: 2)
+        layer.shadowColor = shadowColor.cgColor
+        layer.shadowOffset = CGSize(width: 2, height: 2)
     }
 }
