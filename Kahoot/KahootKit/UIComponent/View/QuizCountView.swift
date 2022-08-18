@@ -54,7 +54,7 @@ open class QuizCountView: UIView {
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 6),
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6)
         ])
     }
     

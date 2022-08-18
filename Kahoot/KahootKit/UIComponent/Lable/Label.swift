@@ -72,8 +72,7 @@ extension Label {
 
         /// Uses the font given or other font
         case custom(UIFont)
-        
-        // swiftlint:disable:next cyclomatic_complexity
+    
         public func font(textStyle: UIFont.TextStyle = .body,
                          dynamic: Bool = true) -> UIFont {
             switch self {
@@ -104,7 +103,6 @@ extension Label {
         }
     }
 }
-
 
 extension Label {
     func textDropShadow(shadowColor: UIColor) {

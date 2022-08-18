@@ -83,7 +83,7 @@ open class QuizTypeView: UIView {
             parentStackView.bottomAnchor.constraint(equalTo: bottomAnchor,
                                                     constant: -4).priorityLow(),
             imageView.heightAnchor.constraint(equalToConstant: 24),
-            imageView.widthAnchor.constraint(equalToConstant: 24),
+            imageView.widthAnchor.constraint(equalToConstant: 24)
         ])
     }
     

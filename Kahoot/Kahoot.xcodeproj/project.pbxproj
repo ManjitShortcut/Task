@@ -541,8 +541,10 @@
 			buildConfigurationList = 1A501B9128A7099D009EC0B1 /* Build configuration list for PBXNativeTarget "Kahoot" */;
 			buildPhases = (
 				1A501B6328A7099B009EC0B1 /* Sources */,
+				1A6CA0CD28AEC5CA00B75F3F /* swiftgen */,
 				1A501B6428A7099B009EC0B1 /* Frameworks */,
 				1A501B6528A7099B009EC0B1 /* Resources */,
+				1A6CA0CC28AEC36100B75F3F /* swift_Lint */,
 			);
 			buildRules = (
 			);
@@ -666,6 +668,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A6CA0CC28AEC36100B75F3F /* swift_Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swift_Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		1A6CA0CD28AEC5CA00B75F3F /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./scripts/swiftgen.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A501B6328A7099B009EC0B1 /* Sources */ = {
