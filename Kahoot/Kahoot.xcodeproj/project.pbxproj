@@ -225,7 +225,7 @@
 		1A501B5E28A7099B009EC0B1 = {
 			isa = PBXGroup;
 			children = (
-				1A501BAD28A71876009EC0B1 /* KahootNetworking */,
+				1A501BAD28A71876009EC0B1 /* Networking */,
 				1A501BAC28A71861009EC0B1 /* KahootKit */,
 				1A501B6928A7099B009EC0B1 /* Kahoot */,
 				1A501B8028A7099D009EC0B1 /* KahootTests */,
@@ -289,7 +289,7 @@
 			path = KahootKit;
 			sourceTree = "<group>";
 		};
-		1A501BAD28A71876009EC0B1 /* KahootNetworking */ = {
+		1A501BAD28A71876009EC0B1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				1A501BC428A72F92009EC0B1 /* EndPointType.swift */,
@@ -298,7 +298,7 @@
 				1A96F55428A7B62A00C79C17 /* NetWorkService.swift */,
 				1A96F57F28A91FDA00C79C17 /* Parser.swift */,
 			);
-			path = KahootNetworking;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		1A501BB428A7193C009EC0B1 /* UIComponent */ = {
