@@ -14,7 +14,7 @@ public protocol NetworkServiceProtocol {
     func cancel()
 }
 
-class NetworkService: NSObject, URLSessionDelegate {
+class NetworkService: NSObject {
     
     private var task: URLSessionTask?
     private let session: URLSession
